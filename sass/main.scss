@@ -1,18 +1,37 @@
-h1 {
-    color: blue;
-    text-align: center;
-    &:hover{
-        color: red;
-    }
+// h1 {
+//     color: blue;
+//     text-align: center;
+//     &:hover{
+//         color: red;
+//     }
 
-    span {
-        font: size 10px;
-    }
-}
+//     span {
+//         font: size 10px;
+//     }
+// }
 
-main {
-    section {
-        display: flex;
+// main {
+//     section {
+//         display: flex;
 
-    }
-}
+//     }
+// }
+
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+@import "./abstracts/functions";
+
+@import "./base/typographie";
+@import "./base/typographie";
+@import "./base/base.scss" ;
+
+@import "./components/buttons" ;
+// @import "./components" ;
+// @import "./components" ;
+
+@import "./layout/header" ;
+@import "./layout/navigation" ;
+@import "./layout/forms" ;
+@import "./layout/footer" ;
