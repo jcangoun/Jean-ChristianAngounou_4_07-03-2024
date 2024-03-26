@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    // flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 10px;
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // font-family: $font-logo-title;
+        height: 25px;
+        margin: 20px;
+        
+    }
+    #navigation-location {
+        display: flex;
+        background-color: $background-color-nav;
+        justify-content: center;
+        padding: 20px;
+        
+
+        &--icone {
+            display: flex;
+            border: 1px solid yellowgreen;
+        }
+        &--city {
+            flex: 1 1 20%;
+            font-family: $font-text ;
+        }
+    } 
+    
+}

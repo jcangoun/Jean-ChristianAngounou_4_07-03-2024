@@ -1,0 +1,7 @@
+.bouton {
+    border: 1px solid transparent;
+    border-radius: 20px;    
+    &--color {
+        background: linear-gradient($secondary-color, $primary-color);
+    }
+}
