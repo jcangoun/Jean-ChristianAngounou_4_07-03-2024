@@ -1,4 +1,10 @@
-
+@mixin les-titres {
+    font-family: $font-text;
+    font-weight: 100;
+}
+.titre {
+    @include les-titres;
+}
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
 
@@ -14,7 +20,7 @@
             text-align: center;
             margin: 10px;
             font-weight: 900;
-            font-family: Shrikhand;
+            font-family: $font-text;
 
         }
         &-accroche {
@@ -57,7 +63,7 @@
         padding: 10px;        
         background-color: $background-color-box;
         &-titre {
-            font-weight: 900;
+                margin: 20px 0 10px 20px;
         }
         &-article {
             display: flex;
@@ -87,7 +93,7 @@
                     // background-color: red;                    
                 }
                 .resto-ville {
-                    // color: red;
+                    margin: 5px;
                     font-size: 1rem;
                     font-family: $font-text;
                     
