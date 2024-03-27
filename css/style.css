@@ -1,11 +1,3 @@
-body {
-  display: flex;
-  min-width: 320px;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -15,6 +7,7 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Shrikhand";
   height: 25px;
   margin: 15px;
 }
@@ -26,13 +19,14 @@ header #navigation-location {
   padding: 20px;
   z-index: 0;
 }
-header #navigation-location--icone {
+header #navigation-location__icone {
   display: flex;
   border: 1px solid yellowgreen;
 }
-header #navigation-location--city {
+header #navigation-location__city {
   flex: 1 1 20%;
   font-family: "Roboto";
+  color: red;
 }
 
 .decouvertes-restaurants {
@@ -85,6 +79,9 @@ header #navigation-location--city {
   padding: 10px;
   background-color: #F6F6F6;
 }
+.restaurants-titre {
+  font-weight: 900;
+}
 .restaurants-article {
   display: flex;
   background-color: white;
@@ -111,8 +108,29 @@ header #navigation-location--city {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
-  background-color: red;
 }
+.restaurants-article-description-texte .resto-ville {
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+
+.text {
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+.titre {
+  font-family: "Shrikhand";
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
 .bouton {
   border: 0;
   border-radius: 30px;
@@ -125,6 +143,18 @@ header #navigation-location--city {
 }
 .bouton--color {
   background: linear-gradient(#FF79DA, #9356DC);
+}
+
+footer {
+  color: white;
+  padding: 10px;
+  background-color: #393939;
+}
+footer .footer-logo {
+  font-family: "Shrikhand";
+}
+footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, footer .mentions-legales, footer .contact {
+  margin: 5px 10px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

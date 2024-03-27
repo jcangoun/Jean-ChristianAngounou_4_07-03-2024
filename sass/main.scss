@@ -24,17 +24,16 @@
 @import "./abstracts/functions";
 
 @import "./base/typography";
-@import "./base/base.scss" ;
 @import "./base/_header.scss";
 @import "./base/_mainbase.scss";
 
 @import "./components/buttons" ;
 // @import "./components" ;
-// @import "./components" ;
+// @import "./components/footer" ;
 
 // @import "./layout/header";
 // @import "./layout/navigation";
 // @import "./layout/forms";
-// @import "./layout/footer";
+@import "./layout/footer";
 
 @import "./vendors/normalize";

@@ -1,3 +1,4 @@
+
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
 
@@ -56,7 +57,7 @@
         padding: 10px;        
         background-color: $background-color-box;
         &-titre {
-            
+            font-weight: 900;
         }
         &-article {
             display: flex;
@@ -83,11 +84,13 @@
                     font-family: $font-text;
                     font-weight: 900;
                     font-size: 20px;
-                    background-color: red;
-                    
+                    // background-color: red;                    
                 }
                 .resto-ville {
-
+                    // color: red;
+                    font-size: 1rem;
+                    font-family: $font-text;
+                    
                 }
             }
            }
