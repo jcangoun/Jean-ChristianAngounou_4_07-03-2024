@@ -1,3 +1,7 @@
+.text {
+  font-family: "Roboto";
+}
+
 body {
   display: flex;
   min-width: 320px;
@@ -24,6 +28,7 @@ header #navigation-location {
   justify-content: center;
   box-shadow: 0px 1px 11px -2px #7E7E7E;
   padding: 20px;
+  z-index: 0;
 }
 header #navigation-location--icone {
   display: flex;
@@ -38,9 +43,10 @@ header #navigation-location--city {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #F6F6F6;
   padding: 10px;
 }
-.decouvertes-restaurants--titre {
+.decouvertes-restaurants-titre {
   display: flex;
   justify-content: center;
   font-size: 20px;
@@ -49,10 +55,31 @@ header #navigation-location--city {
   font-weight: 900;
   font-family: Shrikhand;
 }
-.decouvertes-restaurants--accroche {
+.decouvertes-restaurants-accroche {
   display: flex;
   margin: 10px;
   text-align: center;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.fonctionnement-titre {
+  display: flex;
+}
+.fonctionnement-choix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100%;
+  border: 0px solid;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #F6F6F6;
+  box-shadow: 0 5px 5px 2px #EAEAEA;
 }
 
 .bouton {
