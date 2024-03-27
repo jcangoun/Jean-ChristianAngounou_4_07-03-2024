@@ -49,5 +49,49 @@
 
 }
 @mixin restaurants-section {
-    
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;        
+        background-color: $background-color-box;
+        &-titre {
+            
+        }
+        &-article {
+            display: flex;
+           background-color:white;
+           display: flex;
+           flex-direction: column;
+           margin: 10px;
+           border-radius: 20px;
+           &-image {
+            display: flex;
+            justify-content: center;
+            object-fit: cover;
+            flex: 20%;
+            border-radius: 20px 20px 0 0 ;
+           }
+           &-description {
+            display: flex;
+            padding: 5px;
+            flex: 1 1 100%;
+            justify-content: space-between;
+            &-texte {
+                .resto-nom {
+                    margin: 5px;
+                    font-family: $font-text;
+                    font-weight: 900;
+                    font-size: 20px;
+                    background-color: red;
+                    
+                }
+                .resto-ville {
+
+                }
+            }
+           }
+        }
+        
+    }
 }

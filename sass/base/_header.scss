@@ -17,11 +17,10 @@ header {
         display: flex;
         background-color: $background-color-nav;
         justify-content: center;
-        box-shadow: 0px 1px 11px -2px $base-box-shadow-nav;
+        box-shadow: 0px 1px 12px 0 $base-box-shadow-nav;
         padding: 20px;
         z-index: 0;
         
-
         &--icone {
             display: flex;
             border: 1px solid yellowgreen;
