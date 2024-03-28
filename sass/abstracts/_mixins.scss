@@ -5,6 +5,18 @@
 .titre {
     @include les-titres;
 }
+
+@mixin test {
+    .tests-titre {
+        display: flex;
+        background-color: burlywood;
+    }
+    .tests-article {
+        border: 1px solid orange;
+    }
+}
+
+
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
 
@@ -21,7 +33,6 @@
             margin: 10px;
             font-weight: 900;
             font-family: $font-text;
-
         }
         &-accroche {
             display: flex;
@@ -49,7 +60,16 @@
             padding: 5px;
             border-radius: 15px;
             background-color: $background-color-box;
-            box-shadow: 0 5px 5px 2px $background-color-nav;
+            box-shadow: 0 4px 4px 4px $background-color-nav;
+            &-numero {
+                display: flex;
+                position: relative;
+                right: 65px;
+                background-color: $primary-color;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
         }
     }
 

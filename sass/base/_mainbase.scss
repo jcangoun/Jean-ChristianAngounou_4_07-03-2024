@@ -1,3 +1,4 @@
+@include test;
 @include decouverte-restaurants-section;
 @include features-section;
 @include restaurants-section;
@@ -9,11 +10,13 @@
 }
 .titre {
     font-family: $font-logo-title;
+    font-weight: 100;
 }
 
 body {
     display: flex;
-    min-width: 320px;
+    width: 320px;
+    max-width: 768px;
     flex-direction: column;
     justify-content: center;
     margin: 0;
