@@ -16,7 +16,6 @@
     }
 }
 
-
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
 
@@ -61,10 +60,12 @@
             border-radius: 15px;
             background-color: $background-color-box;
             box-shadow: 0 4px 4px 4px $background-color-nav;
+            position: relative;
             &-numero {
                 display: flex;
-                position: relative;
-                right: 65px;
+                position: absolute;
+                left: -14px;
+                top: 18px;
                 background-color: $primary-color;
                 color: white;
                 padding: 5px 10px;
