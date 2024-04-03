@@ -9,12 +9,74 @@
 @mixin test {
     .tests-titre {
         display: flex;
-        background-color: burlywood;
+        // background-color: burlywood;
+
     }
     .tests-article {
-        border: 1px solid orange;
+        display: flex;
+        flex: 1 1 100%;
+
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 20px;
+        
+        a {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            .tests-article-image {
+                display: flex;
+                object-fit: cover;
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                object-fit: cover;
+                flex: 20%;
+                border-radius: 20px 20px 0 0;
+            }
+            .tests-article-description {
+                display: flex;
+                padding: 5px;
+                flex: 1 1 100%;
+                justify-content: space-between;
+                &-texte {
+                    // margin: 5px;
+                    // font-family: "Roboto";
+                    // font-weight: 900;
+                    // font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                   .testo-nom {                    
+                        margin: 5px;
+                        font-family: "Roboto";
+                        font-weight: 900;
+                        font-size: 20px;                     
+                   }     
+                   .testo-ville {                    
+                        margin: 5px;
+                        font-size: 1rem;
+                        font-family: "Roboto";      
+                   } 
+                }
+                &-like {
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // text-align: center;
+                    // position: relative;
+                    // right: 10px;
+                    // font-size: 25px;
+                    // top: -25px;
+                }
+            }
+        }
     }
 }
+
+
 
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {

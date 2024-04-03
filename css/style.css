@@ -30,7 +30,8 @@ header #navigation-location {
 }
 header #navigation-location__icone {
   display: flex;
-  border: 1px solid yellowgreen;
+  position: relative;
+  right: 20px;
 }
 header #navigation-location__city {
   flex: 1 1 20%;
@@ -40,13 +41,53 @@ header #navigation-location__city {
 
 .tests-titre {
   display: flex;
-  background-color: burlywood;
 }
 
 .tests-article {
-  border: 1px solid orange;
+  display: flex;
+  flex: 1 1 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
 }
-
+.tests-article a {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.tests-article a .tests-article-image {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  flex: 20%;
+  border-radius: 20px 20px 0 0;
+}
+.tests-article a .tests-article-description {
+  display: flex;
+  padding: 5px;
+  flex: 1 1 100%;
+  justify-content: space-between;
+}
+.tests-article a .tests-article-description-texte {
+  display: flex;
+  flex-direction: column;
+}
+.tests-article a .tests-article-description-texte .testo-nom {
+  margin: 5px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 20px;
+}
+.tests-article a .tests-article-description-texte .testo-ville {
+  margin: 5px;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
 .decouvertes-restaurants {
   display: flex;
   flex-direction: column;
@@ -154,6 +195,11 @@ header #navigation-location__city {
   font-weight: 100;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   display: flex;
   min-width: 320px;
@@ -172,8 +218,13 @@ body {
   margin: 20px;
   font-family: "Roboto";
 }
+.bouton a {
+  color: white;
+  text-decoration: none;
+}
 .bouton--color {
   background: linear-gradient(#FF79DA, #9356DC);
+  text-align: center;
 }
 
 header {

@@ -7,11 +7,15 @@
     font-size: 1rem;
     margin: 20px;
     font-family: $font-text;
-// Reaction non connue un esperluette, normalement
-// est suivi de 2underscores "__" pur une description d enfant et 2 tiret du 6"--" pour un modifier 
-// et ci dessous on a deux tirets et de temps en temps un itret et le resultat visible est que ca marche .
-
+    // Reaction non connue un esperluette, normalement
+    // est suivi de 2underscores "__" pur une description d enfant et 2 tiret du 6"--" pour un modifier 
+    // et ci dessous on a deux tirets et de temps en temps un itret et le resultat visible est que ca marche .
+    a {
+        color: white;
+        text-decoration: none;
+    }
 &--color {
         background: linear-gradient($secondary-color, $primary-color);
+        text-align: center;
     }
 }

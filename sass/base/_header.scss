@@ -23,7 +23,8 @@ header {
         
         &__icone {
             display: flex;
-            border: 1px solid yellowgreen;
+            position: relative;
+            right: 20px;
         }
         &__city {
             flex: 1 1 20%;
