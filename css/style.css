@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .titre {
   font-family: "Roboto";
   font-weight: 100;
@@ -143,6 +144,14 @@ header #navigation-location__city {
   padding: 5px 10px;
   border-radius: 20px;
 }
+.fonctionnement-choix-icône {
+  display: flex;
+  justify-content: center;
+}
+.fonctionnement-choix-icône-bloc {
+  display: flex;
+  flex-direction: row;
+}
 
 .restaurants {
   display: flex;
@@ -229,6 +238,15 @@ body {
   text-align: center;
 }
 
+.icone-color {
+  color: #9356DC;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 8px;
+  margin: 0px 2px 0 0;
+}
+
 .heart {
   justify-content: center;
   align-items: center;
@@ -255,14 +273,29 @@ body {
   color: #9356DC;
 }
 
-header {
+.navigation__arrow {
   display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 20px 0 0;
+  background-color: red;
 }
 
-.logo {
+.header-layout {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 30px 10px 0;
+}
+.header-layout .navigation {
+  display: flex;
+  flex-direction: row;
+}
+.header-layout .navigation__arrow {
+  display: flex;
   align-items: center;
+  font-size: 20px;
+  padding: 0 20px 0 0;
 }
 
 body {

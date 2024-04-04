@@ -1,9 +1,22 @@
 
-header {
+.header-layout {
     display: flex;
-}
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 30px 10px 0;
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-around;
+        // align-items: center;
+        // flex-direction: row;
+        &__arrow {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 0 20px 0 0;
+        }    
+
+    }
 }

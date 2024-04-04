@@ -12,19 +12,15 @@
 @mixin test {
     .tests-titre {
         display: flex;
-        // background-color: burlywood;
-
     }
     .tests-article {
         display: flex;
         flex: 1 1 100%;
-
         background-color: white;
         display: flex;
         flex-direction: column;
         margin: 10px;
-        border-radius: 20px;
-        
+        border-radius: 20px;        
         a {
             background-color: transparent;
             display: flex;
@@ -66,7 +62,6 @@
                         font-family: "Roboto";      
                    } 
                 }
-
             }
         }
     }
@@ -76,7 +71,6 @@
 
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -128,6 +122,15 @@
                 color: white;
                 padding: 5px 10px;
                 border-radius: 20px;
+            }
+            &-icône {
+                // background-color: red;
+                display: flex;
+                justify-content: center;
+                &-bloc {
+                    display: flex;
+                    flex-direction: row;
+                }
             }
         }
     }
