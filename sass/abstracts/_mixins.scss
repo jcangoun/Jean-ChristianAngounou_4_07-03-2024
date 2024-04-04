@@ -1,3 +1,6 @@
+@mixin mixed-colors {
+    background: linear-gradient($secondary-color, $primary-color);
+}
 @mixin les-titres {
     font-family: $font-text;
     font-weight: 100;
@@ -31,11 +34,13 @@
                 object-fit: cover;
                 width: 100%;
 
-                display: flex;
                 justify-content: center;
-                object-fit: cover;
-                flex: 20%;
+                // flex: 20%;
+                height: 190px;
                 border-radius: 20px 20px 0 0;
+            }
+            .tests-article-new-pop {
+                background-color: orange;
             }
             .tests-article-description {
                 display: flex;
@@ -61,16 +66,7 @@
                         font-family: "Roboto";      
                    } 
                 }
-                &-like {
-                    // display: flex;
-                    // justify-content: center;
-                    // align-items: center;
-                    // text-align: center;
-                    // position: relative;
-                    // right: 10px;
-                    // font-size: 25px;
-                    // top: -25px;
-                }
+
             }
         }
     }

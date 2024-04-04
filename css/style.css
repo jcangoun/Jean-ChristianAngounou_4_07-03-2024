@@ -61,11 +61,12 @@ header #navigation-location__city {
   display: flex;
   object-fit: cover;
   width: 100%;
-  display: flex;
   justify-content: center;
-  object-fit: cover;
-  flex: 20%;
+  height: 190px;
   border-radius: 20px 20px 0 0;
+}
+.tests-article a .tests-article-new-pop {
+  background-color: orange;
 }
 .tests-article a .tests-article-description {
   display: flex;
@@ -88,6 +89,7 @@ header #navigation-location__city {
   font-size: 1rem;
   font-family: "Roboto";
 }
+
 .decouvertes-restaurants {
   display: flex;
   flex-direction: column;
@@ -225,6 +227,32 @@ body {
 .bouton--color {
   background: linear-gradient(#FF79DA, #9356DC);
   text-align: center;
+}
+
+.heart {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  right: 10px;
+  font-size: 25px;
+}
+
+.testaurants-article-description-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  right: 10px;
+  font-size: 25px;
+}
+.testaurants-article-description-like #here {
+  display: flex;
+}
+.testaurants-article-description-like .full {
+  display: none;
+  color: #9356DC;
 }
 
 header {

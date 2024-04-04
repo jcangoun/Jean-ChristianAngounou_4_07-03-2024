@@ -15,7 +15,7 @@
         text-decoration: none;
     }
 &--color {
-        background: linear-gradient($secondary-color, $primary-color);
+        @include mixed-colors;
         text-align: center;
     }
 }
