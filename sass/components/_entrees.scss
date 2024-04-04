@@ -1,0 +1,29 @@
+.menu__entrees {
+
+    &__titre {
+        @include les-titres;
+        border-bottom: 3px solid $thirth-color ;
+        width: 15%;
+    }
+    &__choix {
+        display: flex;
+        
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+        margin:5px;
+        
+        &__description {
+            display: flex;
+            &__nom {
+                font-family: $font-logo-title;
+                margin: 10px;
+                background-color: greenyellow;
+
+            }   
+            &__accompagnement {
+                background-color: slateblue;
+            } 
+        }
+    }
+}
