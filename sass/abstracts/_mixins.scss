@@ -1,7 +1,12 @@
 @mixin mixed-colors {
     background: linear-gradient($secondary-color, $primary-color);
 }
+
+// @mixin les-textes {}
+
 @mixin les-titres {
+    // les textes plutôt
+
     font-family: $font-text;
     font-weight: 100;
 }
@@ -108,7 +113,7 @@
             flex: 1 1 100%;
             border: 0px solid;
             margin: 10px;
-            padding: 5px;
+            padding: 10px 20px 10px 0;
             border-radius: 15px;
             background-color: $background-color-box;
             box-shadow: 0 4px 4px 4px $background-color-nav;

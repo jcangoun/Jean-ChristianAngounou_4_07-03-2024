@@ -1,0 +1,38 @@
+figure {
+    background-color:  burlywood;
+    border: 4px solid green;
+}
+.menu {
+    background-color: $box-shadow-box;
+    display: flex;
+    flex-direction: column;
+
+    // border: 1px solid red;
+    border-radius: 35px 35px 0 0;
+    padding: 10px;
+    &__intro {       
+        padding: 10px;    
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 25px;
+        &__titre {
+            font-family: $font-logo-title;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        &__like {
+            // mettre ce code en mixin
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:  10%;
+            padding: 20px;
+
+            font-size: 20px;
+        }
+    }
+}
