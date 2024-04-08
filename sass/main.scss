@@ -27,21 +27,20 @@
 @import "./base/_header.scss";
 @import "./base/_mainbase.scss";
 
-@import "./components/buttons" ;
+@import "./components/left-arrow" ;
 @import "./components/heart" ;
 @import "./components/entrees" ;
 @import "./components/plats" ;
 @import "./components/desserts" ;
-
+@import "./components/buttons" ;
 // @import "./components/footer" ;
-@import "./components/left-arrow" ;
 
 
-@import "./layout/header";
-@import "./layout/main";
+
 @import "./layout/body";
+@import "./layout/header";
 @import "./layout/navigation";
-// @import "./layout/forms";
+@import "./layout/main";
 @import "./layout/footer";
 
 @import "./vendors/normalize";
