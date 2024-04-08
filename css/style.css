@@ -139,7 +139,7 @@ header #navigation-location__city {
   display: flex;
   position: absolute;
   left: -14px;
-  top: 18px;
+  top: 20px;
   background-color: #9356DC;
   color: white;
   padding: 5px 10px;
@@ -285,21 +285,72 @@ body {
 }
 .menu__entrees__choix {
   display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
+  margin: 10px;
+  box-shadow: 0px 2px 5px 5px #EAEAEA;
+}
+.menu__entrees__choix .entrees__choix__description {
+  padding: 0 5px;
+}
+.menu__entrees__choix .entrees__choix__description__nom {
+  font-family: "Shrikhand";
+  margin: 5px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 20px;
+}
+.menu__entrees__choix .entrees__choix__description__accompagnement {
   margin: 5px;
 }
-.menu__entrees__choix__description {
+.menu__entrees__choix .entrees__choix__prix {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 5px 0;
+  position: relative;
+  top: 15px;
+  font-weight: 900;
 }
-.menu__entrees__choix__description__nom {
-  font-family: "Shrikhand";
+
+.menu__plats__titre {
+  font-family: "Roboto";
+  font-weight: 100;
+  border-bottom: 3px solid #99E2D0;
+  width: 15%;
+}
+.menu__plats__choix {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
   margin: 10px;
-  background-color: greenyellow;
+  box-shadow: 0px 2px 5px 5px #EAEAEA;
 }
-.menu__entrees__choix__description__accompagnement {
-  background-color: slateblue;
+.menu__plats__choix .plats__choix__description {
+  padding: 0 5px;
+}
+.menu__plats__choix .plats__choix__description__nom {
+  font-family: "Shrikhand";
+  margin: 5px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 20px;
+}
+.menu__plats__choix .plats__choix__description__accompagnement {
+  margin: 5px;
+}
+.menu__plats__choix .plats__choix__prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 5px 0;
+  position: relative;
+  top: 15px;
+  font-weight: 900;
 }
 
 .navigation__arrow {
@@ -332,17 +383,26 @@ body {
   height: 25px;
 }
 
-figure {
-  background-color: burlywood;
-  border: 4px solid green;
+.main__photo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.main__photo__image {
+  margin: 2px;
+  display: flex;
+  object-fit: cover;
+  width: 100%;
 }
 
 .menu {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
-  border-radius: 35px 35px 0 0;
   padding: 10px;
+  position: relative;
+  top: -40px;
+  border-radius: 35px 35px 0 0;
 }
 .menu__intro {
   padding: 10px;
@@ -364,6 +424,8 @@ figure {
   width: 10%;
   padding: 20px;
   font-size: 20px;
+  position: relative;
+  left: 20px;
 }
 
 body {

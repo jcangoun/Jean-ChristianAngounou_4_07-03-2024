@@ -7,23 +7,37 @@
     }
     &__choix {
         display: flex;
-        
+        justify-content: space-between;
         background-color: white;
         border-radius: 20px;
         padding: 5px;
-        margin:5px;
-        
-        &__description {
-            display: flex;
+        margin:10px;  
+        box-shadow: 0px 2px 5px 5px $background-color-nav;     
+        .entrees__choix__description {
+            // display: flex;
+            padding: 0 5px;
             &__nom {
+                // background-color: greenyellow;
                 font-family: $font-logo-title;
-                margin: 10px;
-                background-color: greenyellow;
+                margin: 5px;
+                // margin: 5px;
+                font-family: "Roboto";
+                font-weight: 900;
+                font-size: 20px;
 
             }   
             &__accompagnement {
-                background-color: slateblue;
+                margin: 5px
             } 
+        }
+        .entrees__choix__prix {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 10px 5px 0;
+            position: relative;
+            top: 15px;
+            font-weight: 900;
         }
     }
 }
