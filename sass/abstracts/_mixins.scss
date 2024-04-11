@@ -93,8 +93,9 @@
         }
         &-accroche {
             display: flex;
-            margin: 10px;
+            justify-content: center;
             text-align: center;
+            margin: 10px;
         }
     }
 }

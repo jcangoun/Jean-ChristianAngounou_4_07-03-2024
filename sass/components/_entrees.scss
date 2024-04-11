@@ -1,9 +1,13 @@
 .menu__entrees {
+    padding: 0 10px;
 
     &__titre {
         @include les-titres;
         border-bottom: 3px solid $thirth-color ;
         width: 15%;
+
+        padding: 0 10px 5px 0;
+        margin: 10px;
     }
     &__choix {
         display: flex;

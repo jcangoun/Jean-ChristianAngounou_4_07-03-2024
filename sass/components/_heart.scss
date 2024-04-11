@@ -15,6 +15,7 @@
     position: relative;
     right: 10px;
     font-size: 25px;
+
 }
 .testaurants-article-description-like {
     display: flex;
@@ -30,6 +31,11 @@
     // }
     #here {
         display: flex;
+        background-color: red;
+    }
+    .empty {
+        display: flex;
+        background-color: red;
     }
     .full {
         display: none;
@@ -45,5 +51,9 @@
         // background-clip-text a regarder sur mdn pour comprendre
        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    &:hover {
+        // background-color: blue;
+
     }
 }

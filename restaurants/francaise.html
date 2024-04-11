@@ -3,15 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>La palette du goût</title>
+        <title>A la française</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2eb67eaae2.js" crossorigin="anonymous" defer></script>
         <link rel="stylesheet" href="../css/style.css">
     </head>
-
-    <body>
+    <body>        
         <header class="header-layout">
             <nav class="header-layout__navigation">
                 <span class="header-layout__navigation__arrow">
@@ -19,19 +18,92 @@
                 </span>
             </nav>
             <img class="header-layout__navigation__logo" src="../assets/images/logo/ohmyfood@2x.svg" alt="">
-        </header> 
+        </header>        
         <main>
             <figure class="main__photo">
-                <img class="main__photo__image" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                <img class="main__photo__image" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
             </figure>
-            <section class="menu" >
+            <section class="menu">
                 <div class="menu__intro">
-                    <h1 class="menu__intro__titre">La note enchantée</h1>
+                    <h1 class="menu__intro__titre">A la française</h1>
                     <div class="menu__intro__like ">                       
                         <i class="fa-regular fa-heart empty"></i>                         
                         <i class="fa-solid fa-heart full"></i>                    
                     </div>
                 </div>
+                <section class="menu__entrees">
+                    <h3 class="menu__entrees__titre">ENTREES</h3>
+                    <div class="menu__entrees__choix">
+                        <div class="entrees__choix__description">
+                            <h1 class="entrees__choix__description__nom">Tartare de poulpe acidulé</h1> 
+                            <p class="entrees__choix__description__accompagnement">Aux zestes d'orange </p>                         
+                        </div>
+                        <div class="entrees__choix__prix">25€</div>
+                    </div>                    
+                    <div class="menu__entrees__choix">
+                        <div class="entrees__choix__description">
+                            <h1 class="entrees__choix__description__nom">Velouté de légumes d'antan</h1> 
+                            <p class="entrees__choix__description__accompagnement">Carottes, panais, topinambour</p>                         
+                        </div>
+                        <div class="entrees__choix__prix">35€</div>
+                    </div>                    
+                    <div class="menu__entrees__choix">
+                        <div class="entrees__choix__description">
+                            <h1 class="entrees__choix__description__nom">Soupe à l'oignon</h1> 
+                            <p class="entrees__choix__description__accompagnement">Revisitée</p>                         
+                        </div>
+                        <div class="entrees__choix__prix">20€</div>
+                    </div>                    
+               
+            </section>
+            <section class="menu__plats">
+                <h3 class="menu__plats__titre">Plats</h3>
+                <div class="menu__plats__choix">
+                    <div class="plats__choix__description">
+                        <h1 class="plats__choix__description__nom titre-layout">Coquilles Saint-Jacques</h1>
+                        <p class="plats__choix__description__accompagnement">Accompagnée d'une purée de panais</p>
+                    </div>
+                    <div class="plats__choix__prix">40€</div>
+                </div>                
+                <div class="menu__plats__choix">
+                    <div class="plats__choix__description">
+                        <h1 class="plats__choix__description__nom titre-layout">Magret de canard</h1>
+                        <p class="plats__choix__description__accompagnement">Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="plats__choix__prix">35€</div>
+                </div>                
+                <div class="menu__plats__choix">
+                    <div class="plats__choix__description">
+                        <h1 class="plats__choix__description__nom titre-layout">Pigeonneau d'Ile-et-Vilaine</h1>
+                        <p class="plats__choix__description__accompagnement">Sur son lit de gnocchis aux légumes </p>
+                    </div>
+                    <div class="plats__choix__prix">44€</div>
+                </div>
+            </section>
+            <section class="menu__desserts">
+                <h3 class="menu__desserts__titre" >Desserts</h3>                
+                <div class="menu__desserts__choix">
+                    <div class="desserts__choix__description">
+                        <h1 class="desserts__choix__description__nom titre-layout">Pétales de violettes glacées</h1>
+                        <p class="desserts__choix__description__accompagnement">Et purée de noisettes</p>                        
+                    </div>
+                    <div class="desserts__choix__prix">18€</div>
+                </div>                
+                <div class="menu__desserts__choix">
+                    <div class="desserts__choix__description">
+                        <h1 class="desserts__choix__description__nom titre-layout">Fondant au chocolat</h1>
+                        <p class="desserts__choix__description__accompagnement">Revisité</p>                        
+                    </div>
+                    <div class="desserts__choix__prix">22€</div>
+                </div>                
+                <div class="menu__desserts__choix">
+                    <div class="desserts__choix__description">
+                        <h1 class="desserts__choix__description__nom titre-layout">Millefeuille croustillant</h1>
+                        <p class="desserts__choix__description__accompagnement">Myrtilles et pâtes d'amandes</p>                        
+                    </div>
+                    <div class="desserts__choix__prix">23€</div>
+                </div>                
+            </section>
             </section>
         </main>
         <footer class="footer-layout" >
@@ -48,6 +120,5 @@
             <p class="mentions-legales">Mentions légales</p>
             <p class="contact">Contact</p>    
         </footer>
-
     </body>
 </html>

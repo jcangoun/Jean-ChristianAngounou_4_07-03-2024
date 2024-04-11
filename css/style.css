@@ -110,8 +110,9 @@ header #navigation-location__city {
 }
 .decouvertes-restaurants-accroche {
   display: flex;
-  margin: 10px;
+  justify-content: center;
   text-align: center;
+  margin: 10px;
 }
 
 .fonctionnement {
@@ -257,6 +258,11 @@ body {
 }
 .testaurants-article-description-like #here {
   display: flex;
+  background-color: red;
+}
+.testaurants-article-description-like .empty {
+  display: flex;
+  background-color: red;
 }
 .testaurants-article-description-like .full {
   display: none;
@@ -265,12 +271,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.menu__entrees {
+  padding: 0 10px;
+}
 .menu__entrees__titre {
   font-family: "Roboto";
   font-weight: 100;
   border-bottom: 3px solid #99E2D0;
   width: 15%;
+  padding: 0 10px 5px 0;
+  margin: 10px;
 }
 .menu__entrees__choix {
   display: flex;
@@ -304,11 +314,16 @@ body {
   font-weight: 900;
 }
 
+.menu__plats {
+  padding: 0 10px;
+}
 .menu__plats__titre {
   font-family: "Roboto";
   font-weight: 100;
   border-bottom: 3px solid #99E2D0;
   width: 15%;
+  padding: 0 10px 5px 0;
+  margin: 10px;
 }
 .menu__plats__choix {
   display: flex;
@@ -342,11 +357,16 @@ body {
   font-weight: 900;
 }
 
+.menu__desserts {
+  padding: 0 10px;
+}
 .menu__desserts__titre {
   font-family: "Roboto";
   font-weight: 100;
   border-bottom: 3px solid #99E2D0;
   width: 15%;
+  padding: 0 10px 5px 0;
+  margin: 10px;
 }
 .menu__desserts__choix {
   display: flex;
@@ -458,7 +478,7 @@ body main {
 .menu__intro {
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 25px;
 }
