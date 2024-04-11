@@ -45,6 +45,23 @@
             font-size: 20px;
             position: relative;
             left: 20px;
+            .empty {
+                &:active {
+                    display: none;
+                }                                                                                                
+                &:active + .full {
+                    display: flex;
+                    transform: 2;
+                }                                                
+                                                
+            }
+            .full {
+                display: none;
+                color: $primary-color;
+                background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);        
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 }

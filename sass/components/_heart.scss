@@ -27,33 +27,44 @@
     font-size: 25px;
    
     // .empty {
-        
+    //     display: flex;
     // }
     #here {
         display: flex;
-        background-color: red;
+        background-color: red;           
     }
     .empty {
         display: flex;
-        background-color: red;
+
+        &:hover {
+            display: none;
+        }
+        &:hover + .full {
+            display: flex;
+        } 
+        // &:active {
+        //     display: flex;
+        //     color: $primary-color;
+        //     background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);
+        // }
     }
     .full {
+        // border: 5px dotted blue;
         display: none;
         color: $primary-color;
+        background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);        
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         // background: rgb(162,91,220);
         // color: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);
         // background-color: red;
         // background-image: linear-gradient(0deg, #9356DC, #FF79DA);
-
-        // background: rgb(162,91,220);
-        background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);
-   
+           
         // background-clip-text a regarder sur mdn pour comprendre
-       -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        //  mais pour commencer son webkit ne marche pas 
+        //-webkit-background-clip: text;
+        
     }
-    &:hover {
-        // background-color: blue;
 
-    }
 }

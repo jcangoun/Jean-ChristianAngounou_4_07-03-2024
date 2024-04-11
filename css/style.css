@@ -262,15 +262,21 @@ body {
 }
 .testaurants-article-description-like .empty {
   display: flex;
-  background-color: red;
+}
+.testaurants-article-description-like .empty:hover {
+  display: none;
+}
+.testaurants-article-description-like .empty:hover + .full {
+  display: flex;
 }
 .testaurants-article-description-like .full {
   display: none;
   color: #9356DC;
   background: linear-gradient(180deg, rgb(162, 91, 220) 5%, rgb(229, 113, 219) 95%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu__entrees {
   padding: 0 10px;
 }
@@ -497,6 +503,20 @@ body main {
   font-size: 20px;
   position: relative;
   left: 20px;
+}
+.menu__intro__like .empty:active {
+  display: none;
+}
+.menu__intro__like .empty:active + .full {
+  display: flex;
+  transform: 2;
+}
+.menu__intro__like .full {
+  display: none;
+  color: #9356DC;
+  background: linear-gradient(180deg, rgb(162, 91, 220) 5%, rgb(229, 113, 219) 95%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
