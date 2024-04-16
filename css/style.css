@@ -69,7 +69,12 @@ header #navigation-location__city {
   border-radius: 20px 20px 0 0;
 }
 .tests-article a .tests-article-new-pop {
-  background-color: orange;
+  background-color: #99E2D0;
+  color: #008766;
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  bottom: 110px;
 }
 .tests-article a .tests-article-description {
   display: flex;
@@ -533,7 +538,30 @@ footer .footer-logo {
   font-family: "Shrikhand";
   font-size: 1rem;
 }
+footer .footer-restaurants {
+  align-items: center;
+}
+footer .footer-restaurants-ustensils {
+  margin: 5px 0 5px 5px;
+}
+footer .footer-restaurants-thema {
+  margin: 5px 0 5px 5px;
+}
+footer .footer-partenariat-handshake {
+  margin: 5px 0 5px 5px;
+}
+footer .footer-partenariat-thema {
+  margin: 5px 0 5px 5px;
+}
+footer .mentions-legales {
+  margin: 5px 0 5px 5px;
+}
+footer .contact {
+  margin: 5px 0 5px 5px;
+}
 footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, footer .mentions-legales, footer .contact {
+  display: flex;
+  align-items: center;
   margin: 5px 10px;
 }
 

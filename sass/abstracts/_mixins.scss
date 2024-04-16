@@ -42,7 +42,12 @@
                 border-radius: 20px 20px 0 0;
             }
             .tests-article-new-pop {
-                background-color: orange;
+                background-color: $thirth-color;
+                color: $color-text-pop-up;
+                z-index: 1;
+                position: absolute;
+                right: 15px;
+                bottom: 110px;
             }
             .tests-article-description {
                 display: flex;

@@ -6,8 +6,36 @@ footer {
         font-family: $font-logo-title;
         font-size: 1rem;
     }
+    .footer-restaurants {
+        // display: flex;
+        // margin: 5px;
+        align-items: center;
+        &-ustensils {
+            margin: 5px 0 5px 5px;
+        } 
+        &-thema {
+            margin: 5px 0 5px 5px;
+        }   
+    }
+
+    .footer-partenariat {
+        &-handshake {
+            margin: 5px 0 5px 5px;
+        }
+        &-thema {
+            margin: 5px 0 5px 5px;
+        }
+    }
+    .mentions-legales {
+        margin: 5px 0 5px 5px;
+    }
+    .contact {
+        margin: 5px 0 5px 5px;        
+    }
 // ici je vais faire un placeholder qui fera ca ici
     .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
+        display: flex;
+        align-items: center;
         margin: 5px 10px;
     }    
 
