@@ -69,16 +69,16 @@ header #navigation-location__city {
   border-radius: 20px 20px 0 0;
 }
 .tests-article a .tests-article-new-pop {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   background-color: #99E2D0;
   color: #008766;
   z-index: 1;
   position: absolute;
   right: 30px;
   bottom: 70px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .tests-article a .tests-article-description {
   display: flex;
@@ -109,6 +109,11 @@ header #navigation-location__city {
   background-color: #F6F6F6;
   padding: 10px;
 }
+@media screen and (min-width: 768px) {
+  .decouvertes-restaurants {
+    width: 100%;
+  }
+}
 .decouvertes-restaurants-titre {
   display: flex;
   justify-content: center;
@@ -130,12 +135,22 @@ header #navigation-location__city {
   flex-direction: column;
   padding: 10px;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    width: 80%;
+  }
+}
 .fonctionnement-titre {
   display: flex;
 }
 .fonctionnement .fonctionnement-groupe {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .fonctionnement-groupe {
+    flex-direction: row;
+  }
 }
 .fonctionnement .fonctionnement-groupe .fonctionnement-choix {
   display: flex;
@@ -479,6 +494,12 @@ body main {
   flex-direction: column;
   margin: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  body main {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .header-layout {
   display: flex;
@@ -562,6 +583,11 @@ body main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .menu {
+    width: 65%;
+  }
+}
 
 footer {
   color: white;
@@ -602,8 +628,8 @@ footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, foo
   footer {
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px;
     padding: 5px;
+    align-items: center;
   }
 }
 

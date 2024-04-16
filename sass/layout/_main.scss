@@ -65,4 +65,9 @@
             }
         }
     }
+
+    @media screen and (min-width: 768px) and (max-width:1440px) {
+        // background-color: pink;
+        width: 65%;
+    }
 }

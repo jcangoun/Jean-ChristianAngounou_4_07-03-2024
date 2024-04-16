@@ -42,16 +42,16 @@
                 border-radius: 20px 20px 0 0;
             }
             .tests-article-new-pop {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
                 background-color: $thirth-color;
                 color: $color-text-pop-up;
                 z-index: 1;
                 position: absolute;
                 right: 30px;
                 bottom: 70px;
-                padding: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
             .tests-article-description {
                 display: flex;
@@ -82,8 +82,6 @@
     }
 }
 
-
-
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
         display: flex;
@@ -91,6 +89,9 @@
         justify-content: center;
         background-color: $background-color-box;
         padding: 10px;
+        @media screen and (min-width:768px) {
+            width: 100%;
+        }
         &-titre {
             display: flex;
             justify-content: center;
@@ -114,12 +115,18 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
+        @media screen and (min-width:768px) {
+            width: 80%;
+        }
         &-titre {
             display: flex;           
         }
         .fonctionnement-groupe {
             display: flex;
             flex-direction: column;
+            @media screen and (min-width:768px) {
+                flex-direction: row;
+            }
             .fonctionnement-choix {
                 display: flex;
                 justify-content: center;
