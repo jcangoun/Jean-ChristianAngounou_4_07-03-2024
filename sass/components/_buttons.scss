@@ -1,4 +1,4 @@
-.layout-bouton {
+.common-bouton {
     display: flex;
     justify-content: center;
     .bouton {
@@ -6,7 +6,7 @@
         color: white;
         font-family: $font-text;
         text-align: center;
-        padding: 15px 20px;
+        padding: 20px 40px;
         margin: 20px;
         font-size: 1rem;
         box-shadow: 0px 4px 10px -2px grey;

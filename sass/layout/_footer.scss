@@ -6,6 +6,7 @@ footer {
         font-family: $font-logo-title;
         font-size: 1rem;
     }
+
     .footer-restaurants {
         // display: flex;
         // margin: 5px;
@@ -39,8 +40,13 @@ footer {
         margin: 5px 10px;
     }    
 
-    @media screen and (min-width: 768px) and (max-width: 767px) {
-        
+    @media (min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 20px;
+        padding: 5px;
     }
+
+
 
 }
