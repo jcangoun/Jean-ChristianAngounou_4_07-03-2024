@@ -20,18 +20,25 @@
         .desserts__choix__description {
             // display: flex;
             padding: 0 5px;
+
+            overflow: hidden;
             &__nom {
-                // background-color: greenyellow;
                 font-family: $font-logo-title;
                 margin: 5px;
-                // margin: 5px;
                 font-family: "Roboto";
                 font-weight: 900;
                 font-size: 20px;
 
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }   
             &__accompagnement {
-                margin: 5px
+                margin: 5px;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;                
             } 
         }
         .desserts__choix__prix {

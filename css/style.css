@@ -73,8 +73,12 @@ header #navigation-location__city {
   color: #008766;
   z-index: 1;
   position: absolute;
-  right: 15px;
-  bottom: 110px;
+  right: 30px;
+  bottom: 70px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tests-article a .tests-article-description {
   display: flex;
@@ -309,6 +313,7 @@ body {
 }
 .menu__entrees__choix .entrees__choix__description {
   padding: 0 5px;
+  overflow: hidden;
 }
 .menu__entrees__choix .entrees__choix__description__nom {
   font-family: "Shrikhand";
@@ -316,9 +321,15 @@ body {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__entrees__choix .entrees__choix__description__accompagnement {
   margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__entrees__choix .entrees__choix__prix {
   display: flex;
@@ -352,6 +363,7 @@ body {
 }
 .menu__plats__choix .plats__choix__description {
   padding: 0 5px;
+  overflow: hidden;
 }
 .menu__plats__choix .plats__choix__description__nom {
   font-family: "Shrikhand";
@@ -359,9 +371,15 @@ body {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__plats__choix .plats__choix__description__accompagnement {
   margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__plats__choix .plats__choix__prix {
   display: flex;
@@ -395,6 +413,7 @@ body {
 }
 .menu__desserts__choix .desserts__choix__description {
   padding: 0 5px;
+  overflow: hidden;
 }
 .menu__desserts__choix .desserts__choix__description__nom {
   font-family: "Shrikhand";
@@ -402,9 +421,15 @@ body {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__desserts__choix .desserts__choix__description__accompagnement {
   margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__desserts__choix .desserts__choix__prix {
   display: flex;
@@ -416,23 +441,27 @@ body {
   font-weight: 900;
 }
 
-.bouton {
-  border: 0;
-  border-radius: 30px;
-  color: white;
-  box-shadow: 0px 4px 10px -2px grey;
-  padding: 15px 20px;
-  font-size: 1rem;
-  margin: 20px;
-  font-family: "Roboto";
+.layout-bouton {
+  display: flex;
+  justify-content: center;
 }
-.bouton a {
+.layout-bouton .bouton {
+  border: 0;
+  color: white;
+  font-family: "Roboto";
+  text-align: center;
+  padding: 15px 20px;
+  margin: 20px;
+  font-size: 1rem;
+  box-shadow: 0px 4px 10px -2px grey;
+  border-radius: 30px;
+}
+.layout-bouton .bouton a {
   color: white;
   text-decoration: none;
 }
-.bouton--color {
+.layout-bouton .bouton--color {
   background: linear-gradient(#FF79DA, #9356DC);
-  text-align: center;
 }
 
 body {
@@ -502,6 +531,7 @@ body main {
   font-family: "Shrikhand";
   font-weight: 100;
   font-size: 20px;
+  margin: 10px;
 }
 .menu__intro__like {
   display: flex;
@@ -564,7 +594,6 @@ footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, foo
   align-items: center;
   margin: 5px 10px;
 }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

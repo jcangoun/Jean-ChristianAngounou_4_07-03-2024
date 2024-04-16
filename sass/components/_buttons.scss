@@ -1,23 +1,27 @@
-.bouton {
-    border: 0;
-    border-radius: 30px;    
-    color: white;
-    box-shadow: 0px 4px 10px -2px grey;
-    padding: 15px 20px;
-    font-size: 1rem;
-    margin: 20px;
-    font-family: $font-text;
-    // Reaction non connue un esperluette, normalement
-    // est suivi de 2underscores "__" pur une description d enfant et 2 tiret du 6"--" pour un modifier 
-    // et ci dessous on a deux tirets et de temps en temps un itret et le resultat visible est que ca marche .
-  
-
-    a {
+.layout-bouton {
+    display: flex;
+    justify-content: center;
+    .bouton {
+        border: 0;
         color: white;
-        text-decoration: none;
-    }
-    &--color {
-        @include mixed-colors;
+        font-family: $font-text;
         text-align: center;
+        padding: 15px 20px;
+        margin: 20px;
+        font-size: 1rem;
+        box-shadow: 0px 4px 10px -2px grey;
+        border-radius: 30px;    
+        // Reaction non connue un esperluette, normalement
+        // est suivi de 2underscores "__" pur une description d enfant et 2 tiret du 6"--" pour un modifier 
+        // et ci dessous on a deux tirets et de temps en temps un itret et le resultat visible est que ca marche .
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        &--color {
+            @include mixed-colors;
+            
+        }
     }
 }

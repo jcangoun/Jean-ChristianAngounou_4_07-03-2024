@@ -46,8 +46,12 @@
                 color: $color-text-pop-up;
                 z-index: 1;
                 position: absolute;
-                right: 15px;
-                bottom: 110px;
+                right: 30px;
+                bottom: 70px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .tests-article-description {
                 display: flex;

@@ -20,6 +20,8 @@
         .entrees__choix__description {
             // display: flex;
             padding: 0 5px;
+
+            overflow: hidden;
             &__nom {
                 font-family: $font-logo-title;
                 margin: 5px;
@@ -27,9 +29,16 @@
                 font-weight: 900;
                 font-size: 20px;
 
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }   
             &__accompagnement {
-                margin: 5px
+                margin: 5px;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;                
             } 
         }
         .entrees__choix__prix {
