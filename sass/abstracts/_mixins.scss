@@ -19,67 +19,73 @@
     .tests-titre {
         display: flex;
     }
-    .tests-article {
+
+    .restaurants__groupe__article {
         display: flex;
-        flex: 1 1 100%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        border-radius: 20px;        
-        a {
-            background-color: transparent;
+        .tests-article {
+            display: flex;
+            flex: 1 1 100%;
+            background-color: white;
             display: flex;
             flex-direction: column;
-            .tests-article-image {
+            margin: 10px;
+            border-radius: 20px;        
+            a {
+                background-color: transparent;
                 display: flex;
-                object-fit: cover;
-                width: 100%;
-
-                justify-content: center;
-                // flex: 20%;
-                height: 190px;
-                border-radius: 20px 20px 0 0;
-            }
-            .tests-article-new-pop {
-                display: none;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
-                background-color: $thirth-color;
-                color: $color-text-pop-up;
-                z-index: 1;
-                position: absolute;
-                right: 30px;
-                bottom: 70px;
-            }
-            .tests-article-description {
-                display: flex;
-                padding: 5px;
-                flex: 1 1 100%;
-                justify-content: space-between;
-                &-texte {
-                    // margin: 5px;
-                    // font-family: "Roboto";
-                    // font-weight: 900;
-                    // font-size: 20px;
+                flex-direction: column;
+                .tests-article-image {
                     display: flex;
-                    flex-direction: column;
-                   .testo-nom {                    
+                    object-fit: cover;
+                    width: 100%;
+                    
+                    justify-content: center;
+                    // flex: 20%;
+                    height: 190px;
+                    border-radius: 20px 20px 0 0;
+                }
+                .tests-article-new-pop {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: $thirth-color;
+                    color: $color-text-pop-up;
+                    z-index: 1;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 70px;
+                }
+                .tests-article-description {
+                    display: flex;
+                    padding: 5px;
+                    flex: 1 1 100%;
+                    justify-content: space-between;
+                    &-texte {
+                        // margin: 5px;
+                        // font-family: "Roboto";
+                        // font-weight: 900;
+                        // font-size: 20px;
+                        display: flex;
+                        flex-direction: column;
+                    .testo-nom {                    
                         margin: 5px;
                         font-family: "Roboto";
                         font-weight: 900;
                         font-size: 20px;                     
-                   }     
-                   .testo-ville {                    
+                    }     
+                    .testo-ville {                    
                         margin: 5px;
                         font-size: 1rem;
                         font-family: "Roboto";      
-                   } 
+                    } 
                 }
             }
         }
     }
+}
+
+
 }
 
 @mixin decouverte-restaurants-section {
@@ -116,7 +122,8 @@
         flex-direction: column;
         padding: 10px;
         @media screen and (min-width:768px) {
-            width: 80%;
+            width: 75%;
+            justify-content: space-between;
         }
         &-titre {
             display: flex;           
@@ -126,6 +133,8 @@
             flex-direction: column;
             @media screen and (min-width:768px) {
                 flex-direction: row;
+                justify-content: flex-end;
+                // width: 85%;
             }
             .fonctionnement-choix {
                 display: flex;
@@ -134,7 +143,7 @@
                 flex: 1 1 100%;
                 border: 0px solid;
                 margin: 10px;
-                padding: 10px 20px 10px 0;
+                padding: 10px 05 px 10px 0;
                 border-radius: 15px;
                 background-color: $background-color-box;
                 box-shadow: 0 4px 4px 4px $background-color-nav;
@@ -143,7 +152,6 @@
                     display: flex;
                     position: absolute;
                     left: -14px;
-                    top: 20px;
                     background-color: $primary-color;
                     color: white;
                     padding: 5px 10px;
@@ -171,6 +179,7 @@
         justify-content: center;
         padding: 10px;        
         background-color: $background-color-box;
+        width: 100%;
         &-titre {
                 margin: 20px 0 10px 20px;
         }
@@ -208,6 +217,7 @@
                     
                 }
             }
+
            }
         }
         

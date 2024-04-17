@@ -46,7 +46,10 @@ header #navigation-location__city {
   display: flex;
 }
 
-.tests-article {
+.restaurants__groupe__article {
+  display: flex;
+}
+.restaurants__groupe__article .tests-article {
   display: flex;
   flex: 1 1 100%;
   background-color: white;
@@ -55,12 +58,12 @@ header #navigation-location__city {
   margin: 10px;
   border-radius: 20px;
 }
-.tests-article a {
+.restaurants__groupe__article .tests-article a {
   background-color: transparent;
   display: flex;
   flex-direction: column;
 }
-.tests-article a .tests-article-image {
+.restaurants__groupe__article .tests-article a .tests-article-image {
   display: flex;
   object-fit: cover;
   width: 100%;
@@ -68,7 +71,7 @@ header #navigation-location__city {
   height: 190px;
   border-radius: 20px 20px 0 0;
 }
-.tests-article a .tests-article-new-pop {
+.restaurants__groupe__article .tests-article a .tests-article-new-pop {
   display: none;
   justify-content: center;
   align-items: center;
@@ -80,23 +83,23 @@ header #navigation-location__city {
   right: 30px;
   bottom: 70px;
 }
-.tests-article a .tests-article-description {
+.restaurants__groupe__article .tests-article a .tests-article-description {
   display: flex;
   padding: 5px;
   flex: 1 1 100%;
   justify-content: space-between;
 }
-.tests-article a .tests-article-description-texte {
+.restaurants__groupe__article .tests-article a .tests-article-description-texte {
   display: flex;
   flex-direction: column;
 }
-.tests-article a .tests-article-description-texte .testo-nom {
+.restaurants__groupe__article .tests-article a .tests-article-description-texte .testo-nom {
   margin: 5px;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
 }
-.tests-article a .tests-article-description-texte .testo-ville {
+.restaurants__groupe__article .tests-article a .tests-article-description-texte .testo-ville {
   margin: 5px;
   font-size: 1rem;
   font-family: "Roboto";
@@ -137,7 +140,8 @@ header #navigation-location__city {
 }
 @media screen and (min-width: 768px) {
   .fonctionnement {
-    width: 80%;
+    width: 75%;
+    justify-content: space-between;
   }
 }
 .fonctionnement-titre {
@@ -150,6 +154,7 @@ header #navigation-location__city {
 @media screen and (min-width: 768px) {
   .fonctionnement .fonctionnement-groupe {
     flex-direction: row;
+    justify-content: flex-end;
   }
 }
 .fonctionnement .fonctionnement-groupe .fonctionnement-choix {
@@ -159,7 +164,7 @@ header #navigation-location__city {
   flex: 1 1 100%;
   border: 0px solid;
   margin: 10px;
-  padding: 10px 20px 10px 0;
+  padding: 10px 5 px 10px 0;
   border-radius: 15px;
   background-color: #F6F6F6;
   box-shadow: 0 4px 4px 4px #EAEAEA;
@@ -169,7 +174,6 @@ header #navigation-location__city {
   display: flex;
   position: absolute;
   left: -14px;
-  top: 20px;
   background-color: #9356DC;
   color: white;
   padding: 5px 10px;
@@ -190,6 +194,7 @@ header #navigation-location__city {
   justify-content: center;
   padding: 10px;
   background-color: #F6F6F6;
+  width: 100%;
 }
 .restaurants-titre {
   margin: 20px 0 10px 20px;
