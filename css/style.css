@@ -48,6 +48,16 @@ header #navigation-location__city {
 
 .restaurants__groupe__article {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 2550px) {
+  .restaurants__groupe__article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 70%;
+    margin-left: 12%;
+  }
 }
 .restaurants__groupe__article .tests-article {
   display: flex;
@@ -57,6 +67,11 @@ header #navigation-location__city {
   flex-direction: column;
   margin: 10px;
   border-radius: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 2550px) {
+  .restaurants__groupe__article .tests-article {
+    flex: 1 1 40%;
+  }
 }
 .restaurants__groupe__article .tests-article a {
   background-color: transparent;
@@ -187,6 +202,11 @@ header #navigation-location__city {
   display: flex;
   flex-direction: row;
 }
+.fonctionnement .fonctionnement-groupe .fonctionnement-choix .fonctionnement-choix-instruction {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
 .restaurants {
   display: flex;
@@ -196,8 +216,18 @@ header #navigation-location__city {
   background-color: #F6F6F6;
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants {
+    flex: 1 1 40%;
+  }
+}
 .restaurants-titre {
   margin: 20px 0 10px 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 2550px) {
+  .restaurants-titre {
+    margin-left: 13%;
+  }
 }
 .restaurants-article {
   display: flex;

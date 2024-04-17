@@ -22,6 +22,18 @@
 
     .restaurants__groupe__article {
         display: flex;
+        flex-direction: column;
+   
+
+        @media screen and (min-width:768px) and (max-width:2550px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 10px;
+            
+            width: 70%;
+            margin-left: 12%;
+        }        
+        
         .tests-article {
             display: flex;
             flex: 1 1 100%;
@@ -29,7 +41,10 @@
             display: flex;
             flex-direction: column;
             margin: 10px;
-            border-radius: 20px;        
+            border-radius: 20px;   
+            @media screen and (min-width:768px) and (max-width:2550px) {
+                flex: 1 1 40%;
+            }     
             a {
                 background-color: transparent;
                 display: flex;
@@ -166,6 +181,11 @@
                         flex-direction: row;
                     }
                 }
+                .fonctionnement-choix-instruction {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
             }
         }        
     }
@@ -180,9 +200,16 @@
         padding: 10px;        
         background-color: $background-color-box;
         width: 100%;
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            flex: 1 1 40%;
+        }
         &-titre {
                 margin: 20px 0 10px 20px;
+                @media screen and (min-width:768px) and (max-width:2550px) {
+                    margin-left: 13%;
+                }
         }
+
         &-article {
             display: flex;
            background-color:white;
