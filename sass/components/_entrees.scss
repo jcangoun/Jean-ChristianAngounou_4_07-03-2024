@@ -2,8 +2,6 @@
     padding: 0 10px;
 
     &__titre {
-        @include les-titres;
-        
         @extend %titre-composition;
     }
     &__choix {
@@ -39,13 +37,17 @@
             } 
         }
         .entrees__choix__prix {
-            display: flex;
+        display: flex;
             justify-content: center;
             align-items: center;
             padding: 0px 10px 5px 0;
             position: relative;
             top: 15px;
             font-weight: 900;
+        }
+        .entrees__choix__prix {
+
+            // animation: coeur-remplissage 1s ease-in-out 1 normal both;
         }
     }
 }

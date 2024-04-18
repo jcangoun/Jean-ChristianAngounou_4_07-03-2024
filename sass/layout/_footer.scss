@@ -12,34 +12,32 @@ footer {
         // margin: 5px;
         align-items: center;
         &-ustensils {
-            margin: 5px 0 5px 5px;
+            @extend %footer-margin;
         } 
         &-thema {
-            margin: 5px 0 5px 5px;
+            @extend %footer-margin;
         }   
     }
 
     .footer-partenariat {
         &-handshake {
-            margin: 5px 0 5px 5px;
+            @extend %footer-margin;
         }
         &-thema {
-            margin: 5px 0 5px 5px;
+            @extend %footer-margin;
         }
     }
     .mentions-legales {
-        margin: 5px 0 5px 5px;
+        @extend %footer-margin;
     }
     .contact {
-        margin: 5px 0 5px 5px;        
+        @extend %footer-margin;        
     }
 // ici je vais faire un placeholder qui fera ca ici
     .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
         display: flex;
         align-items: center;
-        margin: 5px 10px;
     }    
-
     @media (min-width: 768px) and (max-width: 1440px) {
         display: flex;
         flex-direction: row-reverse;
@@ -47,7 +45,6 @@ footer {
         align-items: center;
         width: 100%;
     }
-
 
 
 }

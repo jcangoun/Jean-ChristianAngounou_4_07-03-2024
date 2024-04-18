@@ -1,0 +1,50 @@
+.footer-layout {
+    color: white;
+    padding: 10px;
+    background-color: $footer-background-color;
+    &__logo {
+        font-family: $font-logo-title;
+        font-size: 1rem;
+    }
+
+    &__restaurants {
+        // display: flex;
+        // margin: 5px;
+        align-items: center;
+        &__ustensils {
+            @extend %footer-margin;
+        } 
+        &__thema {
+            @extend %footer-margin;
+        }   
+    }
+
+    .footer-partenariat {
+        &__handshake {
+            @extend %footer-margin;
+        }
+        &__thema {
+            @extend %footer-margin;
+        }
+    }
+    .mentions-legales {
+        @extend %footer-margin;
+    }
+    .contact {
+        @extend %footer-margin;        
+    }
+// ici je vais faire un placeholder qui fera ca ici
+    .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
+        display: flex;
+        align-items: center;
+    }    
+    @media (min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+
+}

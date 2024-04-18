@@ -19,7 +19,28 @@
     .tests-titre {
         display: flex;
     }
+@mixin coeurremplissage {
+    @keyframes coeurremplissage {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            color: red;
+        }
+        40% {
 
+        }
+        60% {
+
+        }
+        80% {
+
+        }
+        100% {
+
+        }
+    }
+}
     .restaurants__groupe__article {
         display: flex;
         flex-direction: column;

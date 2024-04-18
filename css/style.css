@@ -6,10 +6,16 @@
 }
 
 .menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
+  font-family: "Roboto";
+  font-weight: 400;
   border-bottom: 3px solid #99E2D0;
-  width: 15%;
+  width: 30px;
   padding: 0 10px 5px 0;
   margin: 10px;
+}
+
+footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout .footer-partenariat__thema, .footer-layout .footer-partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
+  margin: 5px 10px;
 }
 
 p {
@@ -355,10 +361,6 @@ body {
 .menu__entrees {
   padding: 0 10px;
 }
-.menu__entrees__titre {
-  font-family: "Roboto";
-  font-weight: 100;
-}
 .menu__entrees__choix {
   display: flex;
   justify-content: space-between;
@@ -401,10 +403,6 @@ body {
 .menu__plats {
   padding: 0 10px;
 }
-.menu__plats__titre {
-  font-family: "Roboto";
-  font-weight: 100;
-}
 .menu__plats__choix {
   display: flex;
   justify-content: space-between;
@@ -446,10 +444,6 @@ body {
 
 .menu__desserts {
   padding: 0 10px;
-}
-.menu__desserts__titre {
-  font-family: "Roboto";
-  font-weight: 100;
 }
 .menu__desserts__choix {
   display: flex;
@@ -511,6 +505,32 @@ body {
 }
 .common-bouton .bouton--color {
   background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.footer-layout {
+  color: white;
+  padding: 10px;
+  background-color: #393939;
+}
+.footer-layout__logo {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+}
+.footer-layout__restaurants {
+  align-items: center;
+}
+.footer-layout .footer-logo, .footer-layout .footer-restaurants, .footer-layout .footer-partenariat, .footer-layout .mentions-legales, .footer-layout .contact {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .footer-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 10px;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 body {
@@ -631,28 +651,9 @@ footer .footer-logo {
 footer .footer-restaurants {
   align-items: center;
 }
-footer .footer-restaurants-ustensils {
-  margin: 5px 0 5px 5px;
-}
-footer .footer-restaurants-thema {
-  margin: 5px 0 5px 5px;
-}
-footer .footer-partenariat-handshake {
-  margin: 5px 0 5px 5px;
-}
-footer .footer-partenariat-thema {
-  margin: 5px 0 5px 5px;
-}
-footer .mentions-legales {
-  margin: 5px 0 5px 5px;
-}
-footer .contact {
-  margin: 5px 0 5px 5px;
-}
 footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, footer .mentions-legales, footer .contact {
   display: flex;
   align-items: center;
-  margin: 5px 10px;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   footer {

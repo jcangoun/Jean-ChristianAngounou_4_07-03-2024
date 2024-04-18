@@ -1,6 +1,17 @@
 %titre-composition {
+    font-family: "Roboto";
+    font-weight: 400;
+    
     border-bottom: 3px solid #99E2D0;
-    width: 15%;
+    width: 30px;
     padding: 0 10px 5px 0;
     margin: 10px;
+}
+%elements-footer {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+}
+%footer-margin {
+    margin: 5px 10px;
 }
