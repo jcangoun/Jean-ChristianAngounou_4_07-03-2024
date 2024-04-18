@@ -5,6 +5,13 @@
   font-weight: 100;
 }
 
+.menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
+  border-bottom: 3px solid #99E2D0;
+  width: 15%;
+  padding: 0 10px 5px 0;
+  margin: 10px;
+}
+
 p {
   font-family: "Roboto";
   margin-left: 10px;
@@ -127,7 +134,7 @@ header #navigation-location__city {
   background-color: #F6F6F6;
   padding: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 2550px) {
   .decouvertes-restaurants {
     width: 100%;
   }
@@ -153,7 +160,7 @@ header #navigation-location__city {
   flex-direction: column;
   padding: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 2550px) {
   .fonctionnement {
     width: 75%;
     justify-content: space-between;
@@ -166,7 +173,7 @@ header #navigation-location__city {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 2550px) {
   .fonctionnement .fonctionnement-groupe {
     flex-direction: row;
     justify-content: flex-end;
@@ -206,17 +213,17 @@ header #navigation-location__city {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  margin: 20px 0;
 }
 
 .restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
   background-color: #F6F6F6;
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 2550px) {
   .restaurants {
     flex: 1 1 40%;
   }
@@ -351,10 +358,6 @@ body {
 .menu__entrees__titre {
   font-family: "Roboto";
   font-weight: 100;
-  border-bottom: 3px solid #99E2D0;
-  width: 15%;
-  padding: 0 10px 5px 0;
-  margin: 10px;
 }
 .menu__entrees__choix {
   display: flex;
@@ -401,10 +404,6 @@ body {
 .menu__plats__titre {
   font-family: "Roboto";
   font-weight: 100;
-  border-bottom: 3px solid #99E2D0;
-  width: 15%;
-  padding: 0 10px 5px 0;
-  margin: 10px;
 }
 .menu__plats__choix {
   display: flex;
@@ -451,10 +450,6 @@ body {
 .menu__desserts__titre {
   font-family: "Roboto";
   font-weight: 100;
-  border-bottom: 3px solid #99E2D0;
-  width: 15%;
-  padding: 0 10px 5px 0;
-  margin: 10px;
 }
 .menu__desserts__choix {
   display: flex;
@@ -522,7 +517,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-width: 320px;
+  max-width: 1024px;
 }
 body main {
   display: flex;
@@ -663,8 +658,9 @@ footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, foo
   footer {
     display: flex;
     flex-direction: row-reverse;
-    padding: 5px;
+    padding: 20px 10px;
     align-items: center;
+    width: 100%;
   }
 }
 

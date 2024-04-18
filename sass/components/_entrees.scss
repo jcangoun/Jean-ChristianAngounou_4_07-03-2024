@@ -3,11 +3,8 @@
 
     &__titre {
         @include les-titres;
-        border-bottom: 3px solid $thirth-color ;
-        width: 15%;
-
-        padding: 0 10px 5px 0;
-        margin: 10px;
+        
+        @extend %titre-composition;
     }
     &__choix {
         display: flex;

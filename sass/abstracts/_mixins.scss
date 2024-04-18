@@ -110,7 +110,7 @@
         justify-content: center;
         background-color: $background-color-box;
         padding: 10px;
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:768px) and (max-width:2550px) {
             width: 100%;
         }
         &-titre {
@@ -136,7 +136,7 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:768px) and (max-width:2550px) {
             width: 75%;
             justify-content: space-between;
         }
@@ -146,7 +146,7 @@
         .fonctionnement-groupe {
             display: flex;
             flex-direction: column;
-            @media screen and (min-width:768px) {
+            @media screen and (min-width:768px) and (max-width:2550px) {
                 flex-direction: row;
                 justify-content: flex-end;
                 // width: 85%;
@@ -185,6 +185,7 @@
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
+                    margin: 20px 0;
                 }
             }
         }        
@@ -197,10 +198,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10px;        
+        // margin: 10px;        
         background-color: $background-color-box;
         width: 100%;
-        @media screen and (min-width:768px) and (max-width:1023px) {
+        @media screen and (min-width:768px) and (max-width:2550px) {
             flex: 1 1 40%;
         }
         &-titre {
@@ -250,6 +251,7 @@
         
     }
 }
+
 @mixin heart__layout {
     
 }

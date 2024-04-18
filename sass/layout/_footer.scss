@@ -43,8 +43,9 @@ footer {
     @media (min-width: 768px) and (max-width: 1440px) {
         display: flex;
         flex-direction: row-reverse;
-        padding: 5px;
+        padding: 20px 10px;
         align-items: center;
+        width: 100%;
     }
 
 
