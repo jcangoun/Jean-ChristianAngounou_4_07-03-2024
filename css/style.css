@@ -14,6 +14,18 @@
   margin: 10px;
 }
 
+.menu__desserts__choix .desserts__choix__valide-ok, .menu__plats__choix .plats__choix__valide-ok, .menu__entrees__choix .entrees__choix__valide-ok {
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 0 20px 20px 0px;
+}
+
 footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout .footer-partenariat__thema, .footer-layout .footer-partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
   margin: 5px 10px;
 }
@@ -430,11 +442,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 10px 5px 0;
-  position: relative;
-  top: 15px;
   font-weight: 900;
 }
-
 .menu__desserts {
   padding: 0 10px;
 }
@@ -476,7 +485,6 @@ body {
   top: 15px;
   font-weight: 900;
 }
-
 .common-bouton {
   display: flex;
   justify-content: center;

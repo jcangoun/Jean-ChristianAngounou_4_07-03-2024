@@ -45,8 +45,8 @@
             top: 15px;
             font-weight: 900;
         }
-        .entrees__choix__prix {
-
+        .entrees__choix__valide-ok {
+            @extend %case-validation-composition;
             // animation: coeur-remplissage 1s ease-in-out 1 normal both;
         }
     }

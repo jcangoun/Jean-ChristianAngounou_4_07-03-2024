@@ -45,5 +45,9 @@
             top: 15px;
             font-weight: 900;
         }
+
+        .desserts__choix__valide-ok {
+            @extend %case-validation-composition;
+        }
     }
 }
