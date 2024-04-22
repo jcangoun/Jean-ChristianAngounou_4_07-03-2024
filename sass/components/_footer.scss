@@ -22,6 +22,7 @@
     &__partenariat {
         display: flex;
         align-items: center;
+        margin: 5px 5px 5px 0px;
         color: red;
         &__handshake {
             @extend %footer-margin;
@@ -37,10 +38,10 @@
         @extend %footer-margin;        
     }
 // ici je vais faire un placeholder qui fera ca ici
-    // .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
-    //     display: flex;
-    //     align-items: center;
-    // }    
+    .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
+        display: flex;
+        align-items: center;
+    }    
     @media (min-width: 768px) and (max-width: 1440px) {
         display: flex;
         flex-direction: row-reverse;
