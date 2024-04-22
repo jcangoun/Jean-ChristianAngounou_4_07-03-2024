@@ -20,13 +20,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 50px;
   padding: 10px;
   margin: -5px;
   border-radius: 0 20px 20px 0px;
 }
 
-footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout .footer-partenariat__thema, .footer-layout .footer-partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
+footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout__partenariat__thema, .footer-layout__partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
   margin: 5px 10px;
 }
 
@@ -366,6 +366,8 @@ body {
 
 .menu__entrees {
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 .menu__entrees__choix {
   display: flex;
@@ -377,6 +379,9 @@ body {
   box-shadow: 0px 2px 5px 5px #EAEAEA;
 }
 .menu__entrees__choix .entrees__choix__description {
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
   padding: 0 5px;
   overflow: hidden;
 }
@@ -399,14 +404,14 @@ body {
 .menu__entrees__choix .entrees__choix__prix {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0px 10px 5px 0;
-  position: relative;
-  top: 15px;
+  align-items: end;
+  margin: 5px 20px;
   font-weight: 900;
 }
 .menu__plats {
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 .menu__plats__choix {
   display: flex;
@@ -418,6 +423,9 @@ body {
   box-shadow: 0px 2px 5px 5px #EAEAEA;
 }
 .menu__plats__choix .plats__choix__description {
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
   padding: 0 5px;
   overflow: hidden;
 }
@@ -440,12 +448,14 @@ body {
 .menu__plats__choix .plats__choix__prix {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0px 10px 5px 0;
+  align-items: end;
+  margin: 5px 20px;
   font-weight: 900;
 }
 .menu__desserts {
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 .menu__desserts__choix {
   display: flex;
@@ -457,6 +467,9 @@ body {
   box-shadow: 0px 2px 5px 5px #EAEAEA;
 }
 .menu__desserts__choix .desserts__choix__description {
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
   padding: 0 5px;
   overflow: hidden;
 }
@@ -479,10 +492,8 @@ body {
 .menu__desserts__choix .desserts__choix__prix {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0px 10px 5px 0;
-  position: relative;
-  top: 15px;
+  align-items: end;
+  margin: 5px 20px;
   font-weight: 900;
 }
 .common-bouton {
@@ -518,11 +529,13 @@ body {
   font-size: 1rem;
 }
 .footer-layout__restaurants {
-  align-items: center;
-}
-.footer-layout .footer-logo, .footer-layout .footer-restaurants, .footer-layout .footer-partenariat, .footer-layout .mentions-legales, .footer-layout .contact {
   display: flex;
   align-items: center;
+}
+.footer-layout__partenariat {
+  display: flex;
+  align-items: center;
+  color: red;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .footer-layout {
@@ -600,6 +613,7 @@ body main {
   position: relative;
   top: -40px;
   border-radius: 35px 35px 0 0;
+  margin-bottom: -40px;
 }
 .menu__intro {
   padding: 20px;
@@ -653,6 +667,9 @@ footer .footer-logo {
 }
 footer .footer-restaurants {
   align-items: center;
+}
+footer .footer-partenariat {
+  color: burlywood;
 }
 footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, footer .mentions-legales, footer .contact {
   display: flex;

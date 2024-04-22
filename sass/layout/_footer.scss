@@ -20,6 +20,7 @@ footer {
     }
 
     .footer-partenariat {
+        color: burlywood;
         &-handshake {
             @extend %footer-margin;
         }
