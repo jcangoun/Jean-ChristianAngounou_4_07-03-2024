@@ -19,28 +19,28 @@
     .tests-titre {
         display: flex;
     }
-@mixin coeurremplissage {
-    @keyframes coeurremplissage {
-        0% {
-            opacity: 0;
-        }
-        20% {
-            color: red;
-        }
-        40% {
+// @mixin coeurremplissage {
+//     @keyframes coeurremplissage {
+//         0% {
+//             opacity: 0;
+//         }
+//         20% {
+//             color: red;
+//         }
+//         40% {
 
-        }
-        60% {
+//         }
+//         60% {
 
-        }
-        80% {
+//         }
+//         80% {
 
-        }
-        100% {
+//         }
+//         100% {
 
-        }
-    }
-}
+//         }
+//     }
+// }
     .restaurants__groupe__article {
         display: flex;
         flex-direction: column;
@@ -157,10 +157,10 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        @media screen and (min-width:768px) and (max-width:2550px) {
-            width: 75%;
-            justify-content: space-between;
-        }
+        // @media screen and (min-width:768px) and (max-width:2550px) {
+        //     width: 75%;
+        //     justify-content: space-between;
+        // }
         &-titre {
             display: flex;           
         }
@@ -178,8 +178,8 @@
                 align-items: center;
                 flex: 1 1 100%;
                 border: 0px solid;
-                margin: 10px;
-                padding: 10px 05 px 10px 0;
+                margin: 0 0 0 25px;
+                padding: 10px;
                 border-radius: 15px;
                 background-color: $background-color-box;
                 box-shadow: 0 4px 4px 4px $background-color-nav;

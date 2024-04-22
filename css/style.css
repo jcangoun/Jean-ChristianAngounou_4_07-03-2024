@@ -166,12 +166,6 @@ header #navigation-location__city {
   flex-direction: column;
   padding: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 2550px) {
-  .fonctionnement {
-    width: 75%;
-    justify-content: space-between;
-  }
-}
 .fonctionnement-titre {
   display: flex;
 }
@@ -191,8 +185,8 @@ header #navigation-location__city {
   align-items: center;
   flex: 1 1 100%;
   border: 0px solid;
-  margin: 10px;
-  padding: 10px 5 px 10px 0;
+  margin: 0 0 0 25px;
+  padding: 10px;
   border-radius: 15px;
   background-color: #F6F6F6;
   box-shadow: 0 4px 4px 4px #EAEAEA;
@@ -399,7 +393,6 @@ body {
   top: 15px;
   font-weight: 900;
 }
-
 .menu__plats {
   padding: 0 10px;
 }
@@ -536,8 +529,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  max-width: 1024px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 body main {
   display: flex;
@@ -554,6 +547,8 @@ body main {
 .header-layout {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
 }
 .header-layout__navigation {
@@ -565,6 +560,9 @@ body main {
   align-items: center;
   font-size: 20px;
   padding: 0 20px 0 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 .header-layout__navigation__logo {
   display: flex;
@@ -596,7 +594,7 @@ body main {
   border-radius: 35px 35px 0 0;
 }
 .menu__intro {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -612,12 +610,9 @@ body main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 10%;
   padding: 20px;
   font-size: 20px;
-  position: relative;
-  left: 20px;
 }
 .menu__intro__like .empty:active {
   display: none;
@@ -659,9 +654,7 @@ footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, foo
   footer {
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 10px;
     align-items: center;
-    width: 100%;
   }
 }
 
@@ -682,10 +675,6 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
-  margin: 0;
-}
-
 /**
  * Render the `main` element consistently in IE.
  */
