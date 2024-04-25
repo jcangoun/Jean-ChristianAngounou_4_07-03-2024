@@ -22,6 +22,7 @@
             overflow: hidden;
         }
         &:hover > .plats__choix__valide-ok {
+            display: flex;
             animation-name: come-in;
             animation-duration: 2000ms;
             animation-fill-mode: forwards;

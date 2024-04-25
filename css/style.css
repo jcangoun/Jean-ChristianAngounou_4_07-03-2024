@@ -502,6 +502,7 @@ body {
   overflow: hidden;
 }
 .menu__plats__choix:hover > .plats__choix__valide-ok {
+  display: flex;
   animation-name: come-in;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
@@ -587,6 +588,7 @@ body {
   overflow: hidden;
 }
 .menu__desserts__choix:hover > .desserts__choix__valide-ok {
+  display: flex;
   animation-name: come-in;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
