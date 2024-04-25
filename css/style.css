@@ -30,14 +30,14 @@
 }
 @keyframes ok-180deg {
   0% {
-    transform: rotateZ(98deg);
+    transform: rotateZ(158deg);
   }
   25% {
-    transform: rotateZ(75deg);
+    transform: rotateZ(95deg);
     transform: scale(1.02);
   }
   50% {
-    transform: rotateZ(50deg);
+    transform: rotateZ(45deg);
     transform: scale(1.52);
   }
   75% {
@@ -416,6 +416,7 @@ body {
   overflow: hidden;
 }
 .menu__entrees__choix:hover > .entrees__choix__valide-ok {
+  display: flex;
   animation-name: come-in;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
@@ -454,7 +455,7 @@ body {
 .menu__entrees__choix .entrees__choix__valide-ok {
   background-color: #99E2D0;
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -463,6 +464,8 @@ body {
   border-radius: 0 20px 20px 0px;
   position: relative;
   right: -71px;
+  transform: scale(1, 1.02);
+  animation-fill-mode: both;
 }
 .menu__entrees__choix .entrees__choix__valide-ok:hover {
   transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
@@ -473,8 +476,13 @@ body {
   animation-name: ok-180deg;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
+.menu__entrees__choix .entrees__choix__valide-ok .ok-font {
+  transform: rotateZ(120deg);
+}
+
 .menu__plats {
   padding: 0 10px;
   display: flex;
@@ -532,7 +540,7 @@ body {
 .menu__plats__choix .plats__choix__valide-ok {
   background-color: #99E2D0;
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -541,6 +549,8 @@ body {
   border-radius: 0 20px 20px 0px;
   position: relative;
   right: -71px;
+  transform: scale(1, 1.02);
+  animation-fill-mode: both;
 }
 .menu__plats__choix .plats__choix__valide-ok:hover {
   transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
@@ -551,8 +561,13 @@ body {
   animation-name: ok-180deg;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
+.menu__plats__choix .plats__choix__valide-ok .ok-font {
+  transform: rotateZ(120deg);
+}
+
 .menu__desserts {
   padding: 0 10px;
   display: flex;
@@ -610,7 +625,7 @@ body {
 .menu__desserts__choix .desserts__choix__valide-ok {
   background-color: #99E2D0;
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -619,6 +634,8 @@ body {
   border-radius: 0 20px 20px 0px;
   position: relative;
   right: -71px;
+  transform: scale(1, 1.02);
+  animation-fill-mode: both;
 }
 .menu__desserts__choix .desserts__choix__valide-ok:hover {
   transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
@@ -629,8 +646,13 @@ body {
   animation-name: ok-180deg;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
+.menu__desserts__choix .desserts__choix__valide-ok .ok-font {
+  transform: rotateZ(120deg);
+}
+
 .common-bouton {
   display: flex;
   justify-content: center;

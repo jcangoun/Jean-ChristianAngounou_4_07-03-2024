@@ -23,7 +23,8 @@
             // overflow: hidden;
         }
         &:hover > .entrees__choix__valide-ok {
-
+            // background-color: blueviolet;
+            display: flex;
             animation-name: come-in;
             animation-duration: 2000ms;
             animation-fill-mode: forwards;
