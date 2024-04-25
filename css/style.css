@@ -5,6 +5,49 @@
   font-weight: 100;
 }
 
+@keyframes come-in {
+  0% {
+    transform: translateX(10px);
+  }
+  25% {
+    transform: translateX(-11px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+    transform: scaleX(1.02);
+  }
+  80% {
+    transform: translateX(0px);
+    transform: scaleX(1);
+  }
+  100% {
+    transform: translateX(0px);
+    right: 0px;
+  }
+}
+@keyframes ok-180deg {
+  0% {
+    transform: rotateZ(98deg);
+  }
+  25% {
+    transform: rotateZ(75deg);
+    transform: scale(1.02);
+  }
+  50% {
+    transform: rotateZ(50deg);
+    transform: scale(1.52);
+  }
+  75% {
+    transform: rotateZ(25deg);
+    transform: scale(0.8);
+  }
+  100% {
+    transform: rotateZ(1deg);
+  }
+}
 .menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
   font-family: "Roboto";
   font-weight: 400;
@@ -12,18 +55,6 @@
   width: 30px;
   padding: 0 10px 5px 0;
   margin: 10px;
-}
-
-.menu__desserts__choix .desserts__choix__valide-ok, .menu__plats__choix .plats__choix__valide-ok, .menu__entrees__choix .entrees__choix__valide-ok {
-  background-color: #99E2D0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  padding: 10px;
-  margin: -5px;
-  border-radius: 0 20px 20px 0px;
 }
 
 footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout__partenariat__thema, .footer-layout__partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
@@ -382,6 +413,13 @@ body {
   padding: 5px;
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
+  overflow: hidden;
+}
+.menu__entrees__choix:hover > .entrees__choix__valide-ok {
+  animation-name: come-in;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 .menu__entrees__choix .entrees__choix__description {
   display: flex;
@@ -413,6 +451,30 @@ body {
   margin: 5px 20px;
   font-weight: 900;
 }
+.menu__entrees__choix .entrees__choix__valide-ok {
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 0 20px 20px 0px;
+  position: relative;
+  right: -71px;
+}
+.menu__entrees__choix .entrees__choix__valide-ok:hover {
+  transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
+  transform: translateX(0px);
+}
+.menu__entrees__choix .entrees__choix__valide-ok:active > .ok-font {
+  transition: ok-180deg 4s ease-in-out 0 alternate both;
+  animation-name: ok-180deg;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 .menu__plats {
   padding: 0 10px;
   display: flex;
@@ -426,6 +488,16 @@ body {
   padding: 5px;
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
+  overflow: hidden;
+}
+.menu__plats__choix:hover {
+  overflow: hidden;
+}
+.menu__plats__choix:hover > .plats__choix__valide-ok {
+  animation-name: come-in;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 .menu__plats__choix .plats__choix__description {
   display: flex;
@@ -457,6 +529,30 @@ body {
   margin: 5px 20px;
   font-weight: 900;
 }
+.menu__plats__choix .plats__choix__valide-ok {
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 0 20px 20px 0px;
+  position: relative;
+  right: -71px;
+}
+.menu__plats__choix .plats__choix__valide-ok:hover {
+  transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
+  transform: translateX(0px);
+}
+.menu__plats__choix .plats__choix__valide-ok:active > .ok-font {
+  transition: ok-180deg 4s ease-in-out 0 alternate both;
+  animation-name: ok-180deg;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 .menu__desserts {
   padding: 0 10px;
   display: flex;
@@ -470,6 +566,16 @@ body {
   padding: 5px;
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
+  overflow: hidden;
+}
+.menu__desserts__choix:hover {
+  overflow: hidden;
+}
+.menu__desserts__choix:hover > .desserts__choix__valide-ok {
+  animation-name: come-in;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 .menu__desserts__choix .desserts__choix__description {
   display: flex;
@@ -500,6 +606,30 @@ body {
   align-items: end;
   margin: 5px 20px;
   font-weight: 900;
+}
+.menu__desserts__choix .desserts__choix__valide-ok {
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  padding: 10px;
+  margin: -5px;
+  border-radius: 0 20px 20px 0px;
+  position: relative;
+  right: -71px;
+}
+.menu__desserts__choix .desserts__choix__valide-ok:hover {
+  transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
+  transform: translateX(0px);
+}
+.menu__desserts__choix .desserts__choix__valide-ok:active > .ok-font {
+  transition: ok-180deg 4s ease-in-out 0 alternate both;
+  animation-name: ok-180deg;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .common-bouton {
   display: flex;

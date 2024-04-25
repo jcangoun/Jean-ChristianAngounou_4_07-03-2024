@@ -15,6 +15,20 @@
         padding: 5px;
         margin:10px;  
         box-shadow: 0px 2px 5px 5px $background-color-nav;     
+        
+        // position: relative;
+        overflow: hidden;
+        &:hover {
+            overflow: hidden;
+        }
+        &:hover > .plats__choix__valide-ok {
+            animation-name: come-in;
+            animation-duration: 2000ms;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            
+        }
+
         .plats__choix__description {
             display: flex;
             flex-direction: column;
@@ -55,7 +69,8 @@
             font-weight: 900;
         }
         .plats__choix__valide-ok {
-            @extend %case-validation-composition;
+            // @extend %case-validation-composition;
+            @include case-validation-composition;
         }
     }
 }
