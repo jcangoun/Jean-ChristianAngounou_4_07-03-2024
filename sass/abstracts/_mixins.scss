@@ -122,7 +122,6 @@
         flex-direction: column;
         justify-content: center;
         background-color: $background-color-box;
-        padding: 10px;
         @media screen and (min-width:768px) and (max-width:2550px) {
             width: 100%;
         }
@@ -154,7 +153,8 @@
         //     justify-content: space-between;
         // }
         &-titre {
-            display: flex;           
+            display: flex; 
+            // margin-left: 13%;         
         }
         .fonctionnement-groupe {
             display: flex;
