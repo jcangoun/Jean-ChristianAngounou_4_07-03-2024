@@ -5,27 +5,21 @@
   font-weight: 100;
 }
 
-@keyframes come-in {
+@keyframes price-moving {
   0% {
     transform: translateX(10px);
-  }
-  25% {
-    transform: translateX(-11px);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-  75% {
-    transform: translateX(5px);
-    transform: scaleX(1.02);
-  }
-  80% {
-    transform: translateX(0px);
-    transform: scaleX(1);
   }
   100% {
     transform: translateX(0px);
     right: 0px;
+  }
+}
+@keyframes come-in {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-70px);
   }
 }
 @keyframes ok-180deg {
@@ -46,6 +40,30 @@
   }
   100% {
     transform: rotateZ(1deg);
+  }
+}
+@keyframes price-in {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes come-out {
+  0% {
+    transform: translateX(-70px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes price-out {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(50px);
   }
 }
 .menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
@@ -420,7 +438,13 @@ body {
   animation-name: come-in;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: normal;
+}
+.menu__entrees__choix:hover > .entrees__choix__prix {
+  animation-name: price-in;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: normal;
 }
 .menu__entrees__choix .entrees__choix__description {
   display: flex;
@@ -451,6 +475,9 @@ body {
   align-items: end;
   margin: 5px 20px;
   font-weight: 900;
+  position: relative;
+  right: -10px;
+  transform: scale(1, 1.08);
 }
 .menu__entrees__choix .entrees__choix__valide-ok {
   background-color: #99E2D0;
@@ -748,6 +775,7 @@ body main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
   margin: 10px;
 }
 .header-layout__navigation {
@@ -760,8 +788,8 @@ body main {
   font-size: 20px;
   padding: 0 20px 0 0;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 0px;
 }
 .header-layout__navigation__logo {
   display: flex;

@@ -14,8 +14,7 @@
         border-radius: 20px;
         padding: 5px;
         margin:10px;  
-        box-shadow: 0px 2px 5px 5px $background-color-nav;     
-        
+        box-shadow: 0px 2px 5px 5px $background-color-nav;             
         // position: relative;
         overflow: hidden;
 
@@ -30,9 +29,17 @@
             animation-name: come-in;
             animation-duration: 2000ms;
             animation-fill-mode: forwards;
-            animation-timing-function: ease-in-out;
+            animation-timing-function: normal;
             // animation: come-in 2s ease-in-out 0 infinite fill-mode;
         }   
+
+        &:hover > .entrees__choix__prix {
+            animation-name: price-in;
+            animation-duration: 2000ms;
+            animation-fill-mode: forwards;
+            animation-timing-function: normal;
+        }
+
         .entrees__choix__description {
             display: flex;
             flex-direction: column;
@@ -62,15 +69,14 @@
         .entrees__choix__prix {
             display: flex;
             justify-content: center;
-
             align-items: end;
-
-            margin: 5px 20px;
-            
+            margin: 5px 20px;            
+            font-weight: 900;
             // padding: 0px 10px 5px 0;
             // position: relative;
             // top: 15px;
-            font-weight: 900;
+
+            @include price-moves;
         }
         .entrees__choix__valide-ok {
             // @extend %case-validation-composition;

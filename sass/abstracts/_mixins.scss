@@ -262,9 +262,25 @@
 @mixin heart__layout {
     
 }
+@mixin price-moves {
+    position: relative;
+    right: -10px;
+    transform: scale(1, 1.08);
 
+}
+
+@keyframes price-moving {
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        right: 0px;
+
+    }
+}
 @mixin case-validation-composition {
-    
     background-color: $thirth-color;
     color: white;
     display: none;
@@ -301,31 +317,14 @@
 
 }
 
-    @keyframes come-in {
-        0% {
-            transform: translateX(10px);
-        }
-        25% {
-            transform: translateX(-11px);          
-        }
-        
-        50% {
-            transform: translateX(-5px);            
-        }
-        75% {
-            transform: translateX(5px);
-            transform: scaleX(1.02);
-        }
-        80% {
-            transform: translateX(0px);
-            transform: scaleX(1);
-        }
-        100% {
-            transform: translateX(0px);
-            right: 0px;
-
-        }
+@keyframes come-in {
+    0% {
+      transform: translateX(0px);
     }
+    100% {
+      transform: translateX(-70px);
+    }
+  }
 
         @keyframes ok-180deg {
             0% {                
@@ -347,3 +346,30 @@
                 transform: rotateZ(1deg);                
             }
         }
+
+        @keyframes price-in {
+            0% {
+              transform: translateX(50px);
+            }
+            100% {
+              transform: translateX(-20px);
+            }
+          }
+
+          @keyframes come-out {
+            0% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            }
+          }
+          
+          @keyframes price-out {
+            0% {
+              transform: translateX(-20px);
+            }
+            100% {
+              transform: translateX(50px);
+            }
+          }
