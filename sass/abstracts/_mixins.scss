@@ -4,11 +4,8 @@
     background: linear-gradient($secondary-color, $primary-color);
 }
 
-// @mixin les-textes {}
-
 @mixin les-titres {
     // les textes plutôt
-
     font-family: $font-text;
     font-weight: 100;
 }
@@ -20,7 +17,6 @@
     .tests-titre {
         display: flex;
     }
-
 
 
     .restaurants__groupe__article {
@@ -50,18 +46,18 @@
                 display: flex;
                 flex-direction: column;                
                 position: relative;
-                .lien-restaurant__article__new-pop {
-                    display: none;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 10px;
-                    background-color: $thirth-color;
-                    color: $color-text-pop-up;
-                    z-index: 1;
-                    position: absolute;
-                    right: 30px;
-                    bottom: 70px;
-                }
+                // .lien-restaurant__article__new-pop {
+                //     display: none;
+                //     justify-content: center;
+                //     align-items: center;
+                //     padding: 10px;
+                //     background-color: $thirth-color;
+                //     color: $color-text-pop-up;
+                //     z-index: 1;
+                //     position: absolute;
+                //     right: 30px;
+                //     bottom: 70px;
+                // }
                 .lien-restaurant__article__image {
                     display: flex;
                     object-fit: cover;

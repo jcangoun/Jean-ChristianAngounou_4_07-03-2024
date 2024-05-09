@@ -1,8 +1,8 @@
 .footer-layout {
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: $footer-background-color;
-    @media (min-width: 768px) and (max-width: 1440px) {
+    @media (min-width: 768px) and (max-width: 2550px) {
         display: flex;
         flex-direction: row-reverse;
         padding: 10px;
@@ -12,39 +12,55 @@
     &__logo {
         font-family: $font-logo-title;
         font-size: 1rem;
-    }
+        
+        // margin: 15px 20px;
+        @media (min-width: 768px) and (max-width: 2550px) {
+                    margin: 20px 20px 5px 20px;
+        }
 
-    &__restaurants {
-        display: flex;
-        // margin: 5px;
-        align-items: center;
-        &__ustensils {
-            @extend %footer-margin;
-        } 
-        &__thema {
-            @extend %footer-margin;
-        }   
     }
-
-    &__partenariat {
+    .footer-layout__whataboutus {
         display: flex;
-        align-items: center;
-        margin: 5px 5px 5px 0px;
-        color: red;
-        &__handshake {
+        flex-direction: column;    
+        margin: 20px 10px 0px 0;
+        @media (min-width: 768px) and (max-width: 2550px) {
+            flex-direction: row;
+            margin: 20px 40px 0px 0;
+        }
+        .footer-layout__whataboutus__restaurants {
+            display: flex;
+            align-items: center;
+            .footer-layout__whataboutus__restaurants__ustensils {
+                @extend %footer-margin;
+            } 
+            .footer-layout__whataboutus__restaurants__thema {
+                @extend %footer-margin;
+            }   
+        }
+        
+        .footer-layout__whataboutus__partenariat {
+            display: flex;
+            align-items: center;
+            margin: 5px 5px 5px 0px;
+            // color: red;
+            &__handshake {
+                @extend %footer-margin;
+            }
+            &__thema {
+                @extend %footer-margin;
+            }
+        }
+        .footer-layout__whataboutus__mentions-legales {
             @extend %footer-margin;
         }
-        &__thema {
-            @extend %footer-margin;
+        .footer-layout__whataboutus__contact {
+            @extend %footer-margin;        
         }
+
     }
-    .mentions-legales {
-        @extend %footer-margin;
-    }
-    .contact {
-        @extend %footer-margin;        
-    }
-// ici je vais faire un placeholder qui fera ca ici
+        
+        
+        // ici je vais faire un placeholder qui fera ca ici
     .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
         display: flex;
         align-items: center;

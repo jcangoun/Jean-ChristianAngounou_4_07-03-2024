@@ -57,7 +57,7 @@
   margin: 10px;
 }
 
-footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout__partenariat__thema, .footer-layout__partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
+footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__contact, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__mentions-legales, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__thema, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__handshake, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__thema, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__ustensils {
   margin: 10px 5px;
 }
 
@@ -134,18 +134,6 @@ header #navigation-location__city {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__new-pop {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: #99E2D0;
-  color: #008766;
-  z-index: 1;
-  position: absolute;
-  right: 30px;
-  bottom: 70px;
 }
 .restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__image {
   display: flex;
@@ -692,10 +680,10 @@ body {
 
 .footer-layout {
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #393939;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 2550px) {
   .footer-layout {
     display: flex;
     flex-direction: row-reverse;
@@ -707,15 +695,30 @@ body {
   font-family: "Shrikhand";
   font-size: 1rem;
 }
-.footer-layout__restaurants {
+@media (min-width: 768px) and (max-width: 2550px) {
+  .footer-layout__logo {
+    margin: 20px 20px 5px 20px;
+  }
+}
+.footer-layout .footer-layout__whataboutus {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px 0px 0;
+}
+@media (min-width: 768px) and (max-width: 2550px) {
+  .footer-layout .footer-layout__whataboutus {
+    flex-direction: row;
+    margin: 20px 40px 0px 0;
+  }
+}
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__restaurants {
   display: flex;
   align-items: center;
 }
-.footer-layout__partenariat {
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat {
   display: flex;
   align-items: center;
   margin: 5px 5px 5px 0px;
-  color: red;
 }
 .footer-layout .footer-logo, .footer-layout .footer-restaurants, .footer-layout .footer-partenariat, .footer-layout .mentions-legales, .footer-layout .contact {
   display: flex;
