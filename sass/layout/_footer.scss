@@ -2,6 +2,13 @@ footer {
     color: white;
     padding: 10px;
     background-color: $footer-background-color;
+    @media (min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        flex-direction: row-reverse;
+        // padding: 20px 0;
+        align-items: center;
+        // width: 100%;
+    }
     .footer-logo {
         font-family: $font-logo-title;
         font-size: 1rem;
@@ -41,13 +48,6 @@ footer {
         display: flex;
         align-items: center;
     }    
-    @media (min-width: 768px) and (max-width: 1440px) {
-        display: flex;
-        flex-direction: row-reverse;
-        // padding: 20px 0;
-        align-items: center;
-        // width: 100%;
-    }
 
 
 }

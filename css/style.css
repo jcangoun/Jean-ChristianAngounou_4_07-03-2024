@@ -58,7 +58,7 @@
 }
 
 footer .contact, footer .mentions-legales, footer .footer-partenariat-thema, footer .footer-partenariat-handshake, footer .footer-restaurants-thema, footer .footer-restaurants-ustensils, .footer-layout .contact, .footer-layout .mentions-legales, .footer-layout__partenariat__thema, .footer-layout__partenariat__handshake, .footer-layout__restaurants__thema, .footer-layout__restaurants__ustensils {
-  margin: 5px 10px;
+  margin: 10px 5px;
 }
 
 p {
@@ -115,7 +115,7 @@ header #navigation-location__city {
     margin-left: 12%;
   }
 }
-.restaurants__groupe__article .tests-article {
+.restaurants__groupe__article .restaurants__groupe__article__item {
   display: flex;
   flex: 1 1 100%;
   background-color: white;
@@ -125,17 +125,17 @@ header #navigation-location__city {
   border-radius: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 2550px) {
-  .restaurants__groupe__article .tests-article {
+  .restaurants__groupe__article .restaurants__groupe__article__item {
     flex: 1 1 40%;
   }
 }
-.restaurants__groupe__article .tests-article a {
+.restaurants__groupe__article .restaurants__groupe__article__item a {
   background-color: transparent;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.restaurants__groupe__article .tests-article a .tests-article-image {
+.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-image {
   display: flex;
   object-fit: cover;
   width: 100%;
@@ -143,14 +143,18 @@ header #navigation-location__city {
   height: 190px;
   border-radius: 20px 20px 0 0;
 }
-.restaurants__groupe__article .tests-article a .etiquette {
+.restaurants__groupe__article .restaurants__groupe__article__item a .etiquette {
   position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: red;
-  color: green;
+  right: 15px;
+  top: 15px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #008766;
 }
-.restaurants__groupe__article .tests-article a .tests-article-new-pop {
+.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-new-pop {
   display: none;
   justify-content: center;
   align-items: center;
@@ -162,23 +166,23 @@ header #navigation-location__city {
   right: 30px;
   bottom: 70px;
 }
-.restaurants__groupe__article .tests-article a .tests-article-description {
+.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description {
   display: flex;
   padding: 5px;
   flex: 1 1 100%;
   justify-content: space-between;
 }
-.restaurants__groupe__article .tests-article a .tests-article-description-texte {
+.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description-texte {
   display: flex;
   flex-direction: column;
 }
-.restaurants__groupe__article .tests-article a .tests-article-description-texte .testo-nom {
+.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description-texte .testo-nom {
   margin: 5px;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
 }
-.restaurants__groupe__article .tests-article a .tests-article-description-texte .testo-ville {
+.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description-texte .testo-ville {
   margin: 5px;
   font-size: 1rem;
   font-family: "Roboto";
@@ -214,10 +218,11 @@ header #navigation-location__city {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 20px;
 }
 .fonctionnement-titre {
   display: flex;
+  margin: 20px 0 10px 10px;
 }
 .fonctionnement .fonctionnement-groupe {
   display: flex;
@@ -226,7 +231,7 @@ header #navigation-location__city {
 @media screen and (min-width: 768px) and (max-width: 2550px) {
   .fonctionnement .fonctionnement-groupe {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 .fonctionnement .fonctionnement-groupe .fonctionnement-choix {
@@ -690,6 +695,14 @@ body {
   padding: 10px;
   background-color: #393939;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .footer-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    align-items: center;
+  }
+}
 .footer-layout__logo {
   font-family: "Shrikhand";
   font-size: 1rem;
@@ -707,15 +720,6 @@ body {
 .footer-layout .footer-logo, .footer-layout .footer-restaurants, .footer-layout .footer-partenariat, .footer-layout .mentions-legales, .footer-layout .contact {
   display: flex;
   align-items: center;
-}
-@media (min-width: 768px) and (max-width: 1440px) {
-  .footer-layout {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 20px 10px;
-    align-items: center;
-    width: 100%;
-  }
 }
 
 body {
@@ -767,10 +771,8 @@ body main {
   display: flex;
   justify-content: center;
   margin: 0;
-  position: relative;
 }
 .main__photo__image {
-  margin: 2px;
   display: flex;
   object-fit: cover;
   width: 100%;
@@ -832,6 +834,13 @@ footer {
   padding: 10px;
   background-color: #393939;
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
 footer .footer-logo {
   font-family: "Shrikhand";
   font-size: 1rem;
@@ -845,13 +854,6 @@ footer .footer-partenariat {
 footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, footer .mentions-legales, footer .contact {
   display: flex;
   align-items: center;
-}
-@media (min-width: 768px) and (max-width: 1440px) {
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

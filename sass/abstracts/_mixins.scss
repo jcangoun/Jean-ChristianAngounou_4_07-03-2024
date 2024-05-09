@@ -30,13 +30,11 @@
         @media screen and (min-width:768px) and (max-width:2550px) {
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 10px;
-            
+            margin: 10px;            
             width: 70%;
             margin-left: 12%;
-        }        
-        
-        .tests-article {
+        }                
+        .restaurants__groupe__article__item {
             display: flex;
             flex: 1 1 100%;
             background-color: white;
@@ -50,27 +48,28 @@
             a {
                 background-color: transparent;
                 display: flex;
-                flex-direction: column;
-                
+                flex-direction: column;                
                 position: relative;
-
                 .tests-article-image {
                     display: flex;
                     object-fit: cover;
-                    width: 100%;
-                    
+                    width: 100%;                    
                     justify-content: center;
-                    // flex: 20%;
                     height: 190px;
                     border-radius: 20px 20px 0 0;
                 }
 
                 .etiquette {
                     position: absolute;
-                    right: 10px;
-                    top: 10px;
-                    background-color: red;
-                    color: green;
+                    right: 15px;
+                    top: 15px;
+                    align-items: center;
+                    padding: 8px;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    background-color: $thirth-color;
+                    color: $color-text-pop-up;
+
                 }
                 .tests-article-new-pop {
                     display: none;
@@ -147,21 +146,22 @@
     .fonctionnement {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 10px 20px;
         // @media screen and (min-width:768px) and (max-width:2550px) {
         //     width: 75%;
         //     justify-content: space-between;
         // }
         &-titre {
             display: flex; 
-            // margin-left: 13%;         
+            // margin-left: 13%; 
+            margin: 20px 0 10px 10px;        
         }
         .fonctionnement-groupe {
             display: flex;
             flex-direction: column;
             @media screen and (min-width:768px) and (max-width:2550px) {
                 flex-direction: row;
-                justify-content: flex-end;
+                justify-content: center;
                 // width: 85%;
             }
             .fonctionnement-choix {
