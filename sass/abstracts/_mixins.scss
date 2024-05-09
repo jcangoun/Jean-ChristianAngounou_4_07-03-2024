@@ -45,33 +45,12 @@
             @media screen and (min-width:768px) and (max-width:2550px) {
                 flex: 1 1 40%;
             }     
-            a {
+            .lien-restaurant {
                 background-color: transparent;
                 display: flex;
                 flex-direction: column;                
                 position: relative;
-                .tests-article-image {
-                    display: flex;
-                    object-fit: cover;
-                    width: 100%;                    
-                    justify-content: center;
-                    height: 190px;
-                    border-radius: 20px 20px 0 0;
-                }
-
-                .etiquette {
-                    position: absolute;
-                    right: 15px;
-                    top: 15px;
-                    align-items: center;
-                    padding: 8px;
-                    border-radius: 4px;
-                    font-weight: 500;
-                    background-color: $thirth-color;
-                    color: $color-text-pop-up;
-
-                }
-                .tests-article-new-pop {
+                .lien-restaurant__article__new-pop {
                     display: none;
                     justify-content: center;
                     align-items: center;
@@ -83,25 +62,41 @@
                     right: 30px;
                     bottom: 70px;
                 }
-                .tests-article-description {
+                .lien-restaurant__article__image {
+                    display: flex;
+                    object-fit: cover;
+                    width: 100%;                    
+                    justify-content: center;
+                    height: 190px;
+                    border-radius: 20px 20px 0 0;
+                }
+                .lien-restaurant__article__etiquette {
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                    align-items: center;
+                    padding: 8px;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    background-color: $thirth-color;
+                    color: $color-text-pop-up;
+
+                }
+                .lien-restaurant__article__description {
                     display: flex;
                     padding: 5px;
                     flex: 1 1 100%;
                     justify-content: space-between;
-                    &-texte {
-                        // margin: 5px;
-                        // font-family: "Roboto";
-                        // font-weight: 900;
-                        // font-size: 20px;
+                    .lien-restaurant__article__description__texte {
                         display: flex;
                         flex-direction: column;
-                    .testo-nom {                    
+                    .lien-restaurant__article__description__texte__nom {                    
                         margin: 5px;
                         font-family: "Roboto";
                         font-weight: 900;
                         font-size: 20px;                     
                     }     
-                    .testo-ville {                    
+                    .lien-restaurant__article__description__texte__ville {                    
                         margin: 5px;
                         font-size: 1rem;
                         font-family: "Roboto";      

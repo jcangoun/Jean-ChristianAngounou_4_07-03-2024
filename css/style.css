@@ -129,32 +129,13 @@ header #navigation-location__city {
     flex: 1 1 40%;
   }
 }
-.restaurants__groupe__article .restaurants__groupe__article__item a {
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant {
   background-color: transparent;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-image {
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  justify-content: center;
-  height: 190px;
-  border-radius: 20px 20px 0 0;
-}
-.restaurants__groupe__article .restaurants__groupe__article__item a .etiquette {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  align-items: center;
-  padding: 8px;
-  border-radius: 4px;
-  font-weight: 500;
-  background-color: #99E2D0;
-  color: #008766;
-}
-.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-new-pop {
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__new-pop {
   display: none;
   justify-content: center;
   align-items: center;
@@ -166,23 +147,42 @@ header #navigation-location__city {
   right: 30px;
   bottom: 70px;
 }
-.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description {
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__image {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  justify-content: center;
+  height: 190px;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__etiquette {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #008766;
+}
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__description {
   display: flex;
   padding: 5px;
   flex: 1 1 100%;
   justify-content: space-between;
 }
-.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description-texte {
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__description .lien-restaurant__article__description__texte {
   display: flex;
   flex-direction: column;
 }
-.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description-texte .testo-nom {
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__description .lien-restaurant__article__description__texte .lien-restaurant__article__description__texte__nom {
   margin: 5px;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 20px;
 }
-.restaurants__groupe__article .restaurants__groupe__article__item a .tests-article-description-texte .testo-ville {
+.restaurants__groupe__article .restaurants__groupe__article__item .lien-restaurant .lien-restaurant__article__description .lien-restaurant__article__description__texte .lien-restaurant__article__description__texte__ville {
   margin: 5px;
   font-size: 1rem;
   font-family: "Roboto";
