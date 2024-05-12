@@ -702,7 +702,11 @@ body {
   text-decoration: none;
 }
 .common-bouton .bouton--color {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(0deg, #9356DC, transparent);
+  background-color: #FF79DA;
+}
+.common-bouton .bouton--color:hover {
+  background-color: #ff93e1;
 }
 
 .footer-layout {

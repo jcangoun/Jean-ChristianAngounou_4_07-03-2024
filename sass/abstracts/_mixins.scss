@@ -1,7 +1,11 @@
 
 
 @mixin mixed-colors {
-    background: linear-gradient($secondary-color, $primary-color);
+    background: linear-gradient(0deg, $primary-color, transparent);
+    background-color: $secondary-color;
+    &:hover {
+        background-color: lighten($secondary-color, 5%);
+    }
 }
 
 @mixin les-titres {
