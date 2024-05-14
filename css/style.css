@@ -50,22 +50,6 @@
     transform: translateX(-20px);
   }
 }
-@keyframes come-out {
-  0% {
-    transform: translateX(-70px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes price-out {
-  0% {
-    transform: translateX(-20px);
-  }
-  100% {
-    transform: translateX(50px);
-  }
-}
 .menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
   font-family: "Roboto";
   font-weight: 400;
@@ -84,6 +68,54 @@ p {
   margin-left: 10px;
 }
 
+.loading-page {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 100%;
+  min-width: 320px;
+  height: 2000px;
+  background: white;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(0px);
+  animation: coming-page 4s ease-in-out both;
+}
+@keyframes coming-page {
+  0% {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+}
+.loading-page__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  opacity: 0.81;
+  flex: 90%;
+  width: 80%;
+  height: 500px;
+  margin: 10px;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -114,6 +146,14 @@ header #navigation-location__city {
   flex: 1 1 20%;
   font-family: "Roboto";
   color: red;
+}
+
+.navigation__arrow {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 20px 0 0;
+  background-color: red;
 }
 
 .tests-titre {
@@ -362,14 +402,6 @@ body {
   font-family: "Roboto", "Courier New", Courier, monospace;
 }
 
-.navigation__arrow {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  padding: 0 20px 0 0;
-  background-color: red;
-}
-
 .icone-color {
   color: #9356DC;
   display: flex;
@@ -433,18 +465,15 @@ body {
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
 }
+.menu__entrees__choix:hover {
+  cursor: grab;
+}
 .menu__entrees__choix:hover > .entrees__choix__valide-ok {
   display: flex;
-  animation-name: come-in;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: normal;
+  animation: come-in 2s ease-in-out 500ms 1 alternate both;
 }
 .menu__entrees__choix:hover > .entrees__choix__prix {
-  animation-name: price-in;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: normal;
+  animation: price-in 2s ease-in-out 500ms 1 alternate both;
 }
 .menu__entrees__choix .entrees__choix__description {
   display: flex;
@@ -477,7 +506,7 @@ body {
   font-weight: 900;
   position: relative;
   right: -10px;
-  transform: scale(1, 1.08);
+  transform: scale(1, 1);
 }
 .menu__entrees__choix .entrees__choix__valide-ok {
   background-color: #99E2D0;
@@ -499,7 +528,7 @@ body {
   transform: translateX(0px);
 }
 .menu__entrees__choix .entrees__choix__valide-ok:active > .ok-font {
-  transition: ok-180deg 4s ease-in-out 0 alternate both;
+  animation: ok-180deg 4s ease-in-out 0 alternate both;
   animation-name: ok-180deg;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
@@ -507,7 +536,7 @@ body {
   animation-direction: alternate;
 }
 .menu__entrees__choix .entrees__choix__valide-ok .ok-font {
-  transform: rotateZ(120deg);
+  transform: rotateZ(0deg);
 }
 
 .menu__plats {
@@ -526,7 +555,7 @@ body {
   overflow: hidden;
 }
 .menu__plats__choix:hover {
-  overflow: hidden;
+  cursor: grab;
 }
 .menu__plats__choix:hover > .plats__choix__valide-ok {
   display: flex;
@@ -534,6 +563,14 @@ body {
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+}
+.menu__plats__choix:hover > .plats__choix__prix {
+  animation-name: price-in;
+  animation-duration: 2000ms;
+  animation-fill-mode: both;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 .menu__plats__choix .plats__choix__description {
   display: flex;
@@ -585,7 +622,7 @@ body {
   transform: translateX(0px);
 }
 .menu__plats__choix .plats__choix__valide-ok:active > .ok-font {
-  transition: ok-180deg 4s ease-in-out 0 alternate both;
+  animation: ok-180deg 4s ease-in-out 0 alternate both;
   animation-name: ok-180deg;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
@@ -593,7 +630,7 @@ body {
   animation-direction: alternate;
 }
 .menu__plats__choix .plats__choix__valide-ok .ok-font {
-  transform: rotateZ(120deg);
+  transform: rotateZ(0deg);
 }
 
 .menu__desserts {
@@ -612,7 +649,7 @@ body {
   overflow: hidden;
 }
 .menu__desserts__choix:hover {
-  overflow: hidden;
+  cursor: grab;
 }
 .menu__desserts__choix:hover > .desserts__choix__valide-ok {
   display: flex;
@@ -671,7 +708,7 @@ body {
   transform: translateX(0px);
 }
 .menu__desserts__choix .desserts__choix__valide-ok:active > .ok-font {
-  transition: ok-180deg 4s ease-in-out 0 alternate both;
+  animation: ok-180deg 4s ease-in-out 0 alternate both;
   animation-name: ok-180deg;
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
@@ -679,7 +716,15 @@ body {
   animation-direction: alternate;
 }
 .menu__desserts__choix .desserts__choix__valide-ok .ok-font {
-  transform: rotateZ(120deg);
+  transform: rotateZ(0deg);
+}
+.menu__desserts__choix:hover > .desserts__choix__prix {
+  animation-name: price-in;
+  animation-duration: 2000ms;
+  animation-fill-mode: both;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 .common-bouton {
@@ -728,7 +773,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 2550px) {
   .footer-layout__logo {
-    margin: 20px 20px 5px 20px;
+    margin: 20px 20px 0px 20px;
   }
 }
 .footer-layout .footer-layout__whataboutus {
@@ -888,7 +933,7 @@ footer .footer-logo {
 }
 @media (min-width: 768px) and (max-width: 2550px) {
   footer .footer-logo {
-    margin: 20px 20px 5px 20px;
+    margin: 20px 20px 0px 20px;
   }
 }
 footer .footer-layout__whataboutus {

@@ -29,6 +29,14 @@
             animation-timing-function: ease-in-out;
             
         }
+        &:hover > .plats__choix__prix {
+            animation-name: price-in;
+            animation-duration: 2000ms;
+            animation-fill-mode: both;
+            animation-delay: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-direction:alternate;
+        }
 
         .plats__choix__description {
             display: flex;

@@ -56,18 +56,22 @@
         .desserts__choix__prix {
             display: flex;
             justify-content: center;
-
-            align-items: end;
-            
+            align-items: end;            
             margin: 5px 20px;
-            // padding: 0px 10px 5px 0;
-            // position: relative;
-            // top: 15px;
             font-weight: 900;
         }
 
         .desserts__choix__valide-ok {
             @include case-validation-composition;
+        }
+
+        &:hover > .desserts__choix__prix {
+            animation-name: price-in;
+            animation-duration: 2000ms;
+            animation-fill-mode: both;
+            animation-delay: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-direction:alternate;
         }
     }
 }

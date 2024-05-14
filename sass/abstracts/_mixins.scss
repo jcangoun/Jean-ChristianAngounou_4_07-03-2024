@@ -283,7 +283,7 @@
 @mixin price-moves {
     position: relative;
     right: -10px;
-    transform: scale(1, 1.08);
+    transform: scale(1, 1);
     
 }
 
@@ -321,7 +321,8 @@
     }
 
     &:active > .ok-font {
-        transition: ok-180deg 4s ease-in-out 0 alternate both;
+        // transition: ok-180deg 4s ease-in-out 0 alternate both;
+        animation: ok-180deg 4s ease-in-out 0 alternate both;
         animation-name: ok-180deg;
         animation-duration: 1500ms;
         animation-timing-function: ease-in-out;
@@ -374,20 +375,20 @@
             }
           }
 
-          @keyframes come-out {
-            0% {
-              transform: translateX(-70px);
-            }
-            100% {
-              transform: translateX(0px);
-            }
-          }
+        //   @keyframes come-out {
+        //     0% {
+        //       transform: translateX(-70px);
+        //     }
+        //     100% {
+        //       transform: translateX(0px);
+        //     }
+        //   }
           
-          @keyframes price-out {
-            0% {
-              transform: translateX(-20px);
-            }
-            100% {
-              transform: translateX(50px);
-            }
-          }
+        //   @keyframes price-out {
+        //     0% {
+        //       transform: translateX(-20px);
+        //     }
+        //     100% {
+        //       transform: translateX(50px);
+        //     }
+        //   }
