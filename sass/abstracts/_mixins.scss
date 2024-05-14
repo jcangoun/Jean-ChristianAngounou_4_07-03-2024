@@ -50,18 +50,6 @@
                 display: flex;
                 flex-direction: column;                
                 position: relative;
-                // .lien-restaurant__article__new-pop {
-                //     display: none;
-                //     justify-content: center;
-                //     align-items: center;
-                //     padding: 10px;
-                //     background-color: $thirth-color;
-                //     color: $color-text-pop-up;
-                //     z-index: 1;
-                //     position: absolute;
-                //     right: 30px;
-                //     bottom: 70px;
-                // }
                 .lien-restaurant__article__image {
                     display: flex;
                     object-fit: cover;
@@ -106,8 +94,6 @@
         }
     }
 }
-
-
 }
 
 @mixin decouverte-restaurants-section {
@@ -263,14 +249,42 @@
     }
 }
 
-@mixin heart__layout {
-    
+// ------------------------------------- KEYFRAMES PAGE PRINCIPALE ----------------------
+@mixin up-page {
+    @keyframes coming-page {
+        0% {
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+            // transform: translateY(50px);
+        }
+        10% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        50% {
+            // transform: translateY(-500px);
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+    }
 }
+
+// ------------------------------------- KEYFRAMES PAGE PRINCIPALE ----------------------
+
+
 @mixin price-moves {
     position: relative;
     right: -10px;
     transform: scale(1, 1.08);
-
+    
 }
 
 @keyframes price-moving {
@@ -315,7 +329,7 @@
         animation-direction: alternate;
     }   animation-fill-mode: both;
     .ok-font {
-        transform: rotateZ(120deg);
+        transform: rotateZ(0deg);
 
     }
 

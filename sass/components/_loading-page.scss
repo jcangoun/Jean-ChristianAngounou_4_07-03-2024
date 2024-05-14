@@ -1,0 +1,32 @@
+.loading-page {
+
+    display: none;
+    
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 100%;
+    min-width: 320px;
+    height: 2000px;
+    background: white;
+    position: absolute;
+    z-index: 2;
+    transform:  translateY(0px);
+    animation: coming-page 4s ease-in-out both;
+    @include up-page;
+    &__spinner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        opacity: 0.81;
+        flex: 90%;
+        width: 80%;
+        height: 500px;
+        margin: 10px;
+        &__font {
+
+        }
+    }
+}

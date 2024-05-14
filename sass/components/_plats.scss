@@ -19,7 +19,7 @@
         // position: relative;
         overflow: hidden;
         &:hover {
-            overflow: hidden;
+            cursor: grab;
         }
         &:hover > .plats__choix__valide-ok {
             display: flex;
