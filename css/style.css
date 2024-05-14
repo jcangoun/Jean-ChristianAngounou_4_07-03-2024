@@ -904,7 +904,6 @@ body main {
 }
 .menu__intro__like .empty:active + .full {
   display: flex;
-  transform: 2;
 }
 .menu__intro__like .full {
   display: none;

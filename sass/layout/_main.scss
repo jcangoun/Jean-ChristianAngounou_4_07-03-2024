@@ -2,10 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    // position: relative;
-    // top: 45px;
     &__image {
-        // margin: 2px;
         display: flex;
         object-fit: cover;
         width: 100%;
@@ -22,12 +19,10 @@
     border-radius: 35px 35px 0 0;
     margin-bottom: -40px;
     @media screen and (min-width: 768px) and (max-width:2550px) {
-        // background-color: pink;
         width: 65%;
     }
     &__intro {       
         padding: 20px;    
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -43,25 +38,19 @@
         }
         &__like {
             // mettre ce code en mixin
-
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // align-items: center;
             width:  10%;
             padding: 20px;
             font-size: 20px;
-            // position: relative;
-            // left: 20px;
             .empty {
                 &:active {
                     display: none;
                 }                                                                                                
                 &:active + .full {
                     display: flex;
-                    transform: 2;
-                }                                                
-                                                
+                }                                                                                                
             }
             .full {
                 display: none;
