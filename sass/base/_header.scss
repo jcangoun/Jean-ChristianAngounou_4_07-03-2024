@@ -17,7 +17,7 @@ header {
         display: flex;
         background-color: $background-color-nav;
         justify-content: center;
-        box-shadow: 0px 1px 12px 0 $base-box-shadow-nav;
+        // box-shadow: 0px 1px 12px 0 $base-box-shadow-nav;
         padding: 20px;
         z-index: 0;
         
@@ -27,6 +27,7 @@ header {
             right: 20px;
         }
         &__city {
+            font-weight: bolder;
             flex: 1 1 20%;
             font-family: $font-text ;
             color: red;

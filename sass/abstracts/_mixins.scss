@@ -30,9 +30,9 @@
         @media screen and (min-width:768px) and (max-width:2550px) {
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 10px;            
+            margin: 10px auto;            
             width: 70%;
-            margin-left: 12%;
+            // margin-left: 12%;
         }                
         .restaurants__groupe__article__item {
             display: flex;
@@ -111,7 +111,7 @@
             font-size: 2em;
             text-align: center;
             margin: 10px;
-            font-weight: 900;
+            // font-weight: 900;
             font-family: $font-text;
         }
         &-accroche {
@@ -151,7 +151,7 @@
                 align-items: center;
                 flex: 1 1 100%;
                 border: 0px solid;
-                margin: 10px;
+                margin: 20px;
                 padding: 5px;
                 border-radius: 15px;
                 background-color: $background-color-box;
@@ -205,6 +205,7 @@
                 margin: 20px 0 10px 20px;
                 @media screen and (min-width:768px) and (max-width:2550px) {
                     margin-left: 13%;
+                    // ci dessous a mettre 16% en attendant 
                 }
         }
 

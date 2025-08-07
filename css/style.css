@@ -133,7 +133,6 @@ header #navigation-location {
   display: flex;
   background-color: #EAEAEA;
   justify-content: center;
-  box-shadow: 0px 1px 12px 0 #7E7E7E;
   padding: 20px;
   z-index: 0;
 }
@@ -143,6 +142,7 @@ header #navigation-location__icone {
   right: 20px;
 }
 header #navigation-location__city {
+  font-weight: bolder;
   flex: 1 1 20%;
   font-family: "Roboto";
   color: red;
@@ -168,9 +168,8 @@ header #navigation-location__city {
   .restaurants__groupe__article {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 10px auto;
     width: 70%;
-    margin-left: 12%;
   }
 }
 .restaurants__groupe__article .restaurants__groupe__article__item {
@@ -251,7 +250,6 @@ header #navigation-location__city {
   font-size: 2em;
   text-align: center;
   margin: 10px;
-  font-weight: 900;
   font-family: "Roboto";
 }
 .decouvertes-restaurants-accroche {
@@ -286,7 +284,7 @@ header #navigation-location__city {
   align-items: center;
   flex: 1 1 100%;
   border: 0px solid;
-  margin: 10px;
+  margin: 20px;
   padding: 5px;
   border-radius: 15px;
   background-color: #F6F6F6;
