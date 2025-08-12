@@ -434,18 +434,18 @@ body {
 .restaurants-article-description-like .empty {
   display: flex;
 }
-.restaurants-article-description-like .empty:hover {
-  display: none;
-}
-.restaurants-article-description-like .empty:hover + .full {
-  display: flex;
-}
 .restaurants-article-description-like .full {
   display: none;
   color: #9356DC;
   background: linear-gradient(180deg, rgb(162, 91, 220) 5%, rgb(229, 113, 219) 95%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.restaurants-article-description-like:hover > .empty {
+  display: none;
+}
+.restaurants-article-description-like:hover > .full {
+  display: flex;
 }
 
 .menu__entrees {
@@ -894,7 +894,6 @@ body main {
   flex-direction: column;
   justify-content: center;
   width: 10%;
-  padding: 20px;
   font-size: 20px;
 }
 .menu__intro__like .empty:active {

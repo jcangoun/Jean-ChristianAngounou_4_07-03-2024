@@ -25,23 +25,17 @@
     position: relative;
     right: 10px;
     font-size: 25px;
-   
-    // .empty {
+    /// below potentially to erase
+
+    // #here {
     //     display: flex;
+    //     background-color: red;           
     // }
-    #here {
-        display: flex;
-        background-color: red;           
-    }
+
+    // above It could may be erased 
     .empty {
         display: flex;
 
-        &:hover {
-            display: none;
-        }
-        &:hover + .full {
-            display: flex;
-        } 
         // &:active {
         //     display: flex;
         //     color: $primary-color;
@@ -65,5 +59,10 @@
         //-webkit-background-clip: text;
         
     }
-
+    &:hover > .empty {
+        display: none;
+    }
+    &:hover > .full {
+        display: flex;
+    }
 }
