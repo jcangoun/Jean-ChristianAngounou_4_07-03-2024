@@ -59,6 +59,13 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+                &:hover > .empty {
+            display: none;
+            }
+            &:hover > .full {
+            display: flex;
+            }
+
         }
     }
 
