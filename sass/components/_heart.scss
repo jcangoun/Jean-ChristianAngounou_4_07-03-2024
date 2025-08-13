@@ -1,12 +1,19 @@
 .icone-color {
-    color: $primary-color;
-
+    
+    
     display: flex;
     justify-content: center;
-
+    
     position: relative;
     right: 15px;
     margin: 0px 2px 0 0;
+}
+.inactive-icone {
+color: $base-box-shadow-nav;
+}
+.icone-icolored {
+    color: $primary-color;
+    
 }
 .heart {
     justify-content: center;

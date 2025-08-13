@@ -317,6 +317,7 @@ header #navigation-location__city {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-weight: bold;
   margin: 20px 0;
 }
 
@@ -401,12 +402,19 @@ body {
 }
 
 .icone-color {
-  color: #9356DC;
   display: flex;
   justify-content: center;
   position: relative;
   right: 15px;
   margin: 0px 2px 0 0;
+}
+
+.inactive-icone {
+  color: #7E7E7E;
+}
+
+.icone-icolored {
+  color: #9356DC;
 }
 
 .heart {
