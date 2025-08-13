@@ -5,8 +5,12 @@
     justify-content: center;
     
     position: relative;
-    right: 15px;
-    margin: 0px 2px 0 0;
+    right: 6px;
+    bottom: 1px;
+    margin: 0px 0px 0 0;
+                        @media screen and (min-width:320px) and (max-width:768px) {
+                        right: 15px;
+                        }
 }
 .inactive-icone {
 color: $base-box-shadow-nav;
@@ -32,22 +36,9 @@ color: $base-box-shadow-nav;
     position: relative;
     right: 10px;
     font-size: 25px;
-    /// below potentially to erase
 
-    // #here {
-    //     display: flex;
-    //     background-color: red;           
-    // }
-
-    // above It could may be erased 
     .empty {
         display: flex;
-
-        // &:active {
-        //     display: flex;
-        //     color: $primary-color;
-        //     background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);
-        // }
     }
     .full {
         display: none;
@@ -55,14 +46,6 @@ color: $base-box-shadow-nav;
         background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);        
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        // background: rgb(162,91,220);
-        // color: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);
-        // background-color: red;
-        // background-image: linear-gradient(0deg, #9356DC, #FF79DA);
-           
-        // background-clip-text a regarder sur mdn pour comprendre
-        //  mais pour commencer son webkit ne marche pas 
         //-webkit-background-clip: text;
         
     }

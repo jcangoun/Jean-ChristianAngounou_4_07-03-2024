@@ -9,7 +9,6 @@
 }
 
 @mixin les-titres {
-    // les textes plutôt
     font-family: $font-text;
     font-weight: 100;
 }
@@ -209,7 +208,6 @@
         }        
     }
 
-
 }
 @mixin restaurants-section {
     .restaurants {
@@ -254,8 +252,7 @@
                     margin: 5px;
                     font-family: $font-text;
                     font-weight: 900;
-                    font-size: 20px;
-                    // background-color: red;                    
+                    font-size: 20px;               
                 }
                 .resto-ville {
                     margin: 5px;
