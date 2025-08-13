@@ -31,16 +31,15 @@
             flex-direction: row;
             flex-wrap: wrap;
             margin: 10px auto;            
-            width: 70%;
+            width: 80%;
             // margin-left: 12%;
         }                
         .restaurants__groupe__article__item {
             display: flex;
             flex: 1 1 100%;
             background-color: white;
-            display: flex;
             flex-direction: column;
-            margin: 10px;
+            margin: 20px;
             border-radius: 20px;   
             @media screen and (min-width:768px) and (max-width:2550px) {
                 flex: 1 1 40%;
@@ -128,6 +127,7 @@
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
+        width: 80%;
         // @media screen and (min-width:768px) and (max-width:2550px) {
         //     width: 75%;
         //     justify-content: space-between;
@@ -204,7 +204,7 @@
         &-titre {
                 margin: 20px 0 10px 20px;
                 @media screen and (min-width:768px) and (max-width:2550px) {
-                    margin-left: 13%;
+                    margin-left: 11%;
                     // ci dessous a mettre 16% en attendant 
                 }
         }

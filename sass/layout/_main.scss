@@ -33,8 +33,9 @@
         &__titre {
             font-family: $font-logo-title;
             font-weight: 100;
-            font-size: 20px;
             margin: 10px;
+            padding: 20px;
+            
         }
         &__like {
             // mettre ce code en mixin
@@ -42,8 +43,7 @@
             flex-direction: column;
             justify-content: center;
             width:  10%;
-            // padding: 20px;
-            font-size: 20px;
+            font-size: 25px;
             .empty {
                 &:active {
                     display: none;
