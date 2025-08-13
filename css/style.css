@@ -137,6 +137,7 @@ header #navigation-location {
   z-index: 0;
 }
 header #navigation-location__icone {
+  font-size: larger;
   display: flex;
   position: relative;
   right: 20px;
@@ -258,11 +259,19 @@ header #navigation-location__city {
   margin: 10px;
 }
 
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px;
-  width: 80%;
+@media screen and (min-width: 768px) and (max-width: 2550px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .fonctionnement {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .fonctionnement-titre {
   display: flex;
@@ -299,6 +308,16 @@ header #navigation-location__city {
   color: white;
   padding: 5px 10px;
   border-radius: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .fonctionnement .fonctionnement-groupe .fonctionnement-choix #fct-1 .fonctionnement-choix-icône-bloc i {
+    color: #9356DC;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .fonctionnement .fonctionnement-groupe .fonctionnement-choix #fct-2 .fonctionnement-choix-icône-bloc i {
+    color: #9356DC;
+  }
 }
 .fonctionnement .fonctionnement-groupe .fonctionnement-choix-icône {
   display: flex;

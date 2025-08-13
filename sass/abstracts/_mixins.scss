@@ -124,14 +124,20 @@
 
 @mixin features-section {
     .fonctionnement {
-        display: flex;
+        @media screen and (min-width:768px) and (max-width:2550px) {            
+            //     width: 75%;
+            //     justify-content: space-between;            
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            width: 80%;
+
+        }
+        @media screen and (min-width:320px) and (max-width:768px) { 
+        // color: red;
+        justify-content: center;
         flex-direction: column;
-        padding: 10px 20px;
-        width: 80%;
-        // @media screen and (min-width:768px) and (max-width:2550px) {
-        //     width: 75%;
-        //     justify-content: space-between;
-        // }
+                }
         &-titre {
             display: flex; 
             // margin-left: 13%; 
@@ -165,6 +171,20 @@
                     color: white;
                     padding: 5px 10px;
                     border-radius: 20px;
+                }
+                #fct-1 {
+                    @media screen and (min-width:320px) and (max-width:768px) {
+                    .fonctionnement-choix-icône-bloc i {
+                        color: $primary-color;
+                    }
+                    }
+                }
+                #fct-2 {
+                    @media screen and (min-width:320px) and (max-width:768px) {
+                        .fonctionnement-choix-icône-bloc i {
+                            color: $primary-color;
+                        }
+                    }
                 }
                 &-icône {
                     // background-color: red;
