@@ -1,6 +1,6 @@
 .loading-page {
-
-    display: none;
+// c est ici que, j eteinds la page de loading quand pas besoin 
+    display: flex;
     
     justify-content: flex-start;
     align-items: center;
@@ -14,7 +14,35 @@
     z-index: 2;
     transform:  translateY(0px);
     animation: coming-page 4s ease-in-out both;
-    @include up-page;
+
+    // ------------------------------------- KEYFRAMES PAGE PRINCIPALE ----------------------
+
+        @keyframes coming-page {
+        0% {
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+            // transform: translateY(50px);
+        }
+        10% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        50% {
+            // transform: translateY(-500px);
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+    }
+    // ------------------------------------- KEYFRAMES PAGE PRINCIPALE ----------------------
+
     &__spinner {
         display: flex;
         align-items: center;

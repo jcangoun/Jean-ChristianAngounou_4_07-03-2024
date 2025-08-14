@@ -268,35 +268,6 @@
     }
 }
 
-// ------------------------------------- KEYFRAMES PAGE PRINCIPALE ----------------------
-@mixin up-page {
-    @keyframes coming-page {
-        0% {
-            opacity: 0;
-            z-index: 1;
-            position: absolute;
-            // transform: translateY(50px);
-        }
-        10% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-        50% {
-            // transform: translateY(-500px);
-            opacity: 1;
-        }
-        75% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            z-index: 1;
-            transform: translateY(100px);
-        }
-    }
-}
-
-// ------------------------------------- KEYFRAMES PAGE PRINCIPALE ----------------------
 
 // bientot a effacer ci dessous
 @mixin price-moves {
