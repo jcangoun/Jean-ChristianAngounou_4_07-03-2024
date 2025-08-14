@@ -8,31 +8,6 @@
     margin: 10px;
 }
 
-%case-validation-composition {
-    background-color: $thirth-color;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    padding: 10px;
-    margin: -5px;
-    border-radius: 0 20px 20px 0px;
-
-    transform: scale(1);
-
-    transition: transform 2000ms;
-    &:hover {
-        transform: scale(1,02);
-        transform: rotateZ(75deg);
-
-    }
-
-    &:hover + .ok-font {
-        animation: ok-180deg 1000ms ease-in-out 0 alternate both ;
-    }
-}
-
 %elements-footer {
     display: flex;
     align-items: center;
