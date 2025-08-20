@@ -44,11 +44,8 @@
             // animation-delay: 500ms;
             // animation-timing-function: ease-in-out;
             // animation-direction:alternate;
-            
-            // animation: come-in 2s ease-in-out 0 infinite fill-mode;
 
             animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
-
          // animation: name duration timing-function delay iteration-count direction fill-mode;
         }           
         .entrees__choix__description {
@@ -86,8 +83,11 @@
             position: relative;
             right: -10px;
             transform: all, scale(1, 1);
+            animation: come-out 1500ms ease-in-out 500ms 1 alternate both;
         }
         .entrees__choix__valide-ok {
+
+            
             // mixin.scss ligne 321
             @include case-validation-composition;
         }

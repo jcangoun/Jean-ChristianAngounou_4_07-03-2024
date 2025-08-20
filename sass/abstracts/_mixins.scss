@@ -302,6 +302,7 @@
     position: relative;
     right: -71px;
     transform: scale(1, 1.02) ;
+
     &:hover {
         transition: all 1s cubic-bezier(0.70, 0.30, 0.50, 1.35);
         transform: translateX(0px);
@@ -336,23 +337,23 @@
       transform: translateX(-70px);
     }
   }
-        //   @keyframes come-out {
-        //     0% {
-        //       transform: translateX(-70px);
-        //     }
-        //     100% {
-        //       transform: translateX(0px);
-        //     }
-        //   }
+          @keyframes come-out {
+            0% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            }
+          }
           
-        //   @keyframes price-out {
-        //     0% {
-        //       transform: translateX(-20px);
-        //     }
-        //     100% {
-        //       transform: translateX(50px);
-        //     }
-        //   }
+          @keyframes price-out {
+            0% {
+              transform: translateX(-20px);
+            }
+            100% {
+              transform: translateX(50px);
+            }
+          }
          @keyframes price-in {
             0% {
               transform: translateX(50px);
