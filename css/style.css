@@ -30,20 +30,20 @@
     transform: translateX(0px);
   }
 }
-@keyframes price-out {
-  0% {
-    transform: translateX(-20px);
-  }
-  100% {
-    transform: translateX(50px);
-  }
-}
 @keyframes price-in {
   0% {
     transform: translateX(50px);
   }
   100% {
     transform: translateX(-20px);
+  }
+}
+@keyframes price-out {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(50px);
   }
 }
 @keyframes ok-180deg {
@@ -64,6 +64,26 @@
   }
   100% {
     transform: rotateZ(1deg);
+  }
+}
+@keyframes no-ok-moins-180deg {
+  0% {
+    transform: rotateZ(1deg);
+  }
+  25% {
+    transform: rotateZ(25deg);
+    transform: scale(0.8);
+  }
+  50% {
+    transform: rotateZ(45deg);
+    transform: scale(1.52);
+  }
+  75% {
+    transform: rotateZ(95deg);
+    transform: scale(1.02);
+  }
+  100% {
+    transform: rotateZ(158deg);
   }
 }
 .menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
@@ -513,10 +533,10 @@ body {
   position: relative;
   right: -70px;
   transform: all, scale(1, 1);
-  animation: come-out 800ms ease-in-out 500ms 1 alternate both;
+  animation: come-out 900ms ease-in-out 500ms 1 alternate both;
 }
 .menu__entrees__choix .entrees__choix__valide-ok {
-  animation: come-out 800ms ease-in-out 500ms 1 alternate both;
+  animation: come-out 900ms ease-in-out 500ms 1 alternate both;
   background-color: #99E2D0;
   color: white;
   display: flex;
@@ -533,7 +553,6 @@ body {
 .menu__entrees__choix .entrees__choix__valide-ok:hover {
   transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
   transform: translateX(0px);
-  background-color: pink;
 }
 .menu__entrees__choix .entrees__choix__valide-ok:hover > .ok-font {
   animation: ok-180deg 4s ease-in-out 0 alternate both;
@@ -543,10 +562,11 @@ body {
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-fill-mode: both;
-  background-color: yellowgreen;
 }
 .menu__entrees__choix .entrees__choix__valide-ok .ok-font {
   transform: rotateZ(0deg);
+  animation: ok-no-180deg 4s ease-in-out 0 alternate both;
+  transition: transform 0.5s ease-in-out;
 }
 
 .menu__plats {
@@ -629,7 +649,6 @@ body {
 .menu__plats__choix .plats__choix__valide-ok:hover {
   transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
   transform: translateX(0px);
-  background-color: pink;
 }
 .menu__plats__choix .plats__choix__valide-ok:hover > .ok-font {
   animation: ok-180deg 4s ease-in-out 0 alternate both;
@@ -639,10 +658,11 @@ body {
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-fill-mode: both;
-  background-color: yellowgreen;
 }
 .menu__plats__choix .plats__choix__valide-ok .ok-font {
   transform: rotateZ(0deg);
+  animation: ok-no-180deg 4s ease-in-out 0 alternate both;
+  transition: transform 0.5s ease-in-out;
 }
 
 .menu__desserts {
@@ -717,7 +737,6 @@ body {
 .menu__desserts__choix .desserts__choix__valide-ok:hover {
   transition: all 1s cubic-bezier(0.7, 0.3, 0.5, 1.35);
   transform: translateX(0px);
-  background-color: pink;
 }
 .menu__desserts__choix .desserts__choix__valide-ok:hover > .ok-font {
   animation: ok-180deg 4s ease-in-out 0 alternate both;
@@ -727,10 +746,11 @@ body {
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-fill-mode: both;
-  background-color: yellowgreen;
 }
 .menu__desserts__choix .desserts__choix__valide-ok .ok-font {
   transform: rotateZ(0deg);
+  animation: ok-no-180deg 4s ease-in-out 0 alternate both;
+  transition: transform 0.5s ease-in-out;
 }
 .menu__desserts__choix:hover > .desserts__choix__prix {
   animation-name: price-in;

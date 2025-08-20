@@ -44,7 +44,6 @@
             // animation-delay: 500ms;
             // animation-timing-function: ease-in-out;
             // animation-direction:alternate;
-
             animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
          // animation: name duration timing-function delay iteration-count direction fill-mode;
         }           
@@ -83,11 +82,11 @@
             position: relative;
             right: -70px;
             transform: all, scale(1, 1);
-            animation: come-out 800ms ease-in-out 500ms 1 alternate both;
+            animation: come-out 900ms ease-in-out 500ms 1 alternate both;
         }
         .entrees__choix__valide-ok {
             
-            animation: come-out 800ms ease-in-out 500ms 1 alternate both;
+            animation: come-out 900ms ease-in-out 500ms 1 alternate both;
             // mixin.scss ligne 321
             @include case-validation-composition;
         }

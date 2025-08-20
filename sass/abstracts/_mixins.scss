@@ -307,7 +307,7 @@
     &:hover {
         transition: all 1s cubic-bezier(0.70, 0.30, 0.50, 1.35);
         transform: translateX(0px);
-        background-color: pink;
+
         // animation-name: come-in;
         // animation-duration: 1500ms;
     }
@@ -321,11 +321,12 @@
         animation-iteration-count:1;
         animation-direction: alternate;
        animation-fill-mode: both;
-       background-color: yellowgreen;
+    //    background-color: yellowgreen;
     }
     .ok-font {
         transform: rotateZ(0deg);
-
+        animation: ok-no-180deg 4s ease-in-out 0 alternate both;
+        transition: transform 0.5s ease-in-out;
     }
 
 }
@@ -346,7 +347,15 @@
               transform: translateX(0px);
             }
           }
-          
+
+         @keyframes price-in {
+            0% {
+              transform: translateX(50px);
+            }
+            100% {
+              transform: translateX(-20px);
+            }
+          }          
           @keyframes price-out {
             0% {
               transform: translateX(-20px);
@@ -355,14 +364,7 @@
               transform: translateX(50px);
             }
           }
-         @keyframes price-in {
-            0% {
-              transform: translateX(50px);
-            }
-            100% {
-              transform: translateX(-20px);
-            }
-          }       
+       
         @keyframes ok-180deg {
             0% {                
                 transform: rotateZ(158deg);
@@ -381,6 +383,27 @@
             }
             100% {
                 transform: rotateZ(1deg);                
+            }
+        }
+
+        @keyframes no-ok-moins-180deg {
+            0% {
+                transform: rotateZ(1deg);
+            }
+            25% {
+                                transform: rotateZ(25deg);
+                transform: scale(0.80); 
+            }
+            50% {
+                                transform: rotateZ(45deg);
+                transform: scale(1.52);
+            }
+            75% {
+                transform: rotateZ(95deg);
+                transform: scale(1.02);
+            }
+            100% {
+                transform: rotateZ(158deg);
             }
         }
 
