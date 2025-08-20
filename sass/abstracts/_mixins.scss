@@ -291,7 +291,8 @@
 @mixin case-validation-composition {
     background-color: $thirth-color;
     color: white;
-    display: none;
+    // test ci dessous
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;

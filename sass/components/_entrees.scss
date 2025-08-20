@@ -81,13 +81,13 @@
             text-overflow: ellipsis;
 
             position: relative;
-            right: -10px;
+            right: -70px;
             transform: all, scale(1, 1);
-            animation: come-out 1500ms ease-in-out 500ms 1 alternate both;
+            animation: come-out 800ms ease-in-out 500ms 1 alternate both;
         }
         .entrees__choix__valide-ok {
-
             
+            animation: come-out 800ms ease-in-out 500ms 1 alternate both;
             // mixin.scss ligne 321
             @include case-validation-composition;
         }
