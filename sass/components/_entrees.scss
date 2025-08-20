@@ -9,13 +9,32 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
+        flex-grow: 4;
         border-radius: 20px;
         padding: 5px;
         margin:10px;  
         box-shadow: 0px 2px 5px 5px $background-color-nav;             
-        overflow: hidden;        
+        overflow: hidden;    
+        cursor: grab;    
+        transition: 1s;
+        &__> .entrees__choix__prix { 
+              transform: translateX(0);
+              transition: transform 0.5s ease-in-out;
+        }
         &:hover {
             cursor: grab;
+        }
+        &:hover > .entrees__choix__prix {
+            // animation-name: price-in;
+            // animation-duration: 2000ms;
+            // animation-fill-mode: both;
+            // animation-delay: 500ms;
+            // animation-timing-function: ease-in-out;
+            // animation-direction:alternate;            
+            animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
+            position: relative;
+            right: -20px;
+         // animation: name duration timing-function delay iteration-count direction fill-mode;
         }
         &:hover > .entrees__choix__valide-ok {
             display: flex;
@@ -28,22 +47,10 @@
             
             // animation: come-in 2s ease-in-out 0 infinite fill-mode;
 
-            animation: come-in 2s ease-in-out 500ms 1 alternate both;
+            animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
 
          // animation: name duration timing-function delay iteration-count direction fill-mode;
         }           
-        &:hover > .entrees__choix__prix {
-            // animation-name: price-in;
-            // animation-duration: 2000ms;
-            // animation-fill-mode: both;
-            // animation-delay: 500ms;
-            // animation-timing-function: ease-in-out;
-            // animation-direction:alternate;
-         
-            animation: price-in 2s ease-in-out 500ms 1 alternate both;
-            
-         // animation: name duration timing-function delay iteration-count direction fill-mode;
-        }
         .entrees__choix__description {
             display: flex;
             flex-direction: column;

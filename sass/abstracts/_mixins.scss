@@ -336,7 +336,31 @@
       transform: translateX(-70px);
     }
   }
-
+        //   @keyframes come-out {
+        //     0% {
+        //       transform: translateX(-70px);
+        //     }
+        //     100% {
+        //       transform: translateX(0px);
+        //     }
+        //   }
+          
+        //   @keyframes price-out {
+        //     0% {
+        //       transform: translateX(-20px);
+        //     }
+        //     100% {
+        //       transform: translateX(50px);
+        //     }
+        //   }
+         @keyframes price-in {
+            0% {
+              transform: translateX(50px);
+            }
+            100% {
+              transform: translateX(-20px);
+            }
+          }       
         @keyframes ok-180deg {
             0% {                
                 transform: rotateZ(158deg);
@@ -358,29 +382,4 @@
             }
         }
 
-        @keyframes price-in {
-            0% {
-              transform: translateX(50px);
-            }
-            100% {
-              transform: translateX(-20px);
-            }
-          }
 
-        //   @keyframes come-out {
-        //     0% {
-        //       transform: translateX(-70px);
-        //     }
-        //     100% {
-        //       transform: translateX(0px);
-        //     }
-        //   }
-          
-        //   @keyframes price-out {
-        //     0% {
-        //       transform: translateX(-20px);
-        //     }
-        //     100% {
-        //       transform: translateX(50px);
-        //     }
-        //   }

@@ -22,6 +22,14 @@
     transform: translateX(-70px);
   }
 }
+@keyframes price-in {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
 @keyframes ok-180deg {
   0% {
     transform: rotateZ(158deg);
@@ -40,14 +48,6 @@
   }
   100% {
     transform: rotateZ(1deg);
-  }
-}
-@keyframes price-in {
-  0% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(-20px);
   }
 }
 .menu__desserts__titre, .menu__plats__titre, .menu__entrees__titre {
@@ -438,21 +438,30 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  flex-grow: 4;
   border-radius: 20px;
   padding: 5px;
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
+  cursor: grab;
+  transition: 1s;
+}
+.menu__entrees__choix__ > .entrees__choix__prix {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
 }
 .menu__entrees__choix:hover {
   cursor: grab;
 }
+.menu__entrees__choix:hover > .entrees__choix__prix {
+  animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
+  position: relative;
+  right: -20px;
+}
 .menu__entrees__choix:hover > .entrees__choix__valide-ok {
   display: flex;
-  animation: come-in 2s ease-in-out 500ms 1 alternate both;
-}
-.menu__entrees__choix:hover > .entrees__choix__prix {
-  animation: price-in 2s ease-in-out 500ms 1 alternate both;
+  animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
 }
 .menu__entrees__choix .entrees__choix__description {
   display: flex;
