@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     padding: 0 10px;    
-
     &__titre {
         @extend %titre-composition;
     }
@@ -14,8 +13,7 @@
         padding: 5px;
         margin:10px;  
         box-shadow: 0px 2px 5px 5px $background-color-nav;             
-        overflow: hidden;
-        
+        overflow: hidden;        
         &:hover {
             cursor: grab;
         }
@@ -33,8 +31,7 @@
             animation: come-in 2s ease-in-out 500ms 1 alternate both;
 
          // animation: name duration timing-function delay iteration-count direction fill-mode;
-        }   
-        
+        }           
         &:hover > .entrees__choix__prix {
             // animation-name: price-in;
             // animation-duration: 2000ms;
@@ -47,7 +44,6 @@
             
          // animation: name duration timing-function delay iteration-count direction fill-mode;
         }
-
         .entrees__choix__description {
             display: flex;
             flex-direction: column;
@@ -65,8 +61,7 @@
                 text-overflow: ellipsis;
             }   
             &__accompagnement {
-                margin: 5px;
-                
+                margin: 5px;                
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;                
@@ -75,7 +70,7 @@
         .entrees__choix__prix {
             display: flex;
             justify-content: center;
-            align-items: end;
+            align-items: flex-end;
             margin: 0 20px 10px 0;          
             font-weight: 900;
             overflow: hidden;
@@ -83,7 +78,7 @@
 
             position: relative;
             right: -10px;
-            transform: scale(1, 1);
+            transform: all, scale(1, 1);
         }
         .entrees__choix__valide-ok {
             // mixin.scss ligne 321

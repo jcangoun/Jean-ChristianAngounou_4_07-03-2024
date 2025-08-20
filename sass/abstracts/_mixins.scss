@@ -305,12 +305,12 @@
     &:hover {
         transition: all 1s cubic-bezier(0.70, 0.30, 0.50, 1.35);
         transform: translateX(0px);
-        // background-color: red;
+        background-color: pink;
         // animation-name: come-in;
         // animation-duration: 1500ms;
     }
 
-    &:active > .ok-font {
+    &:hover > .ok-font {
         // transition: ok-180deg 4s ease-in-out 0 alternate both;
         animation: ok-180deg 4s ease-in-out 0 alternate both;
         animation-name: ok-180deg;
@@ -318,7 +318,9 @@
         animation-timing-function: ease-in-out;
         animation-iteration-count:1;
         animation-direction: alternate;
-    }   animation-fill-mode: both;
+       animation-fill-mode: both;
+       background-color: yellowgreen;
+    }
     .ok-font {
         transform: rotateZ(0deg);
 
