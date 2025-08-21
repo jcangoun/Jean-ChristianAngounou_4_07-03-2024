@@ -83,8 +83,7 @@
             transform: all, scale(1, 1);
             animation: come-out 900ms ease-in-out 500ms 1 alternate both;
         }
-        .entrees__choix__valide-ok {
-            
+        .entrees__choix__valide-ok {            
             animation: come-out 900ms ease-in-out 500ms 1 alternate both;
             // mixin.scss ligne 321
             @include case-validation-composition;

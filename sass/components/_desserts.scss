@@ -11,28 +11,50 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
+        flex-grow: 4;
         border-radius: 20px;
         padding: 5px;
         margin:10px;  
-        box-shadow: 0px 2px 5px 5px $background-color-nav;     
-        overflow: hidden;
-        
+        box-shadow: 0px 2px 5px 5px $background-color-nav;             
+        overflow: hidden;    
+        // cursor: grab;    
+        transition: 1s;
+        &__> .desserts__choix__prix { 
+              transform: translateX(0);
+              transition: transform 0.5s ease-in-out;
+        }
         &:hover {
             cursor: grab;
         }
+         &:hover > .desserts__choix__prix {
+            // animation-name: price-in;
+            // animation-duration: 2000ms;
+            // animation-fill-mode: both;
+            // animation-delay: 500ms;
+            // animation-timing-function: ease-in-out;
+            // animation-direction:alternate;            
+            animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
+            position: relative;
+            right: -20px;
+         // animation: name duration timing-function delay iteration-count direction fill-mode;
+        }       
         &:hover > .desserts__choix__valide-ok {
             display: flex;
-            animation-name: come-in;
-            animation-duration: 2000ms;
-            animation-fill-mode: forwards;
-            animation-timing-function: ease-in-out;
+            // animation-name: come-in;
+            // animation-duration: 2000ms;
+            // animation-fill-mode: both;
+            // animation-delay: 500ms;
+            // animation-timing-function: ease-in-out;
+            // animation-direction:alternate;
+            animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
+         // animation: name duration timing-function delay iteration-count direction fill-mode;
+
         }
         .desserts__choix__description {
             display: flex;
             flex-direction: column;
             flex: 70%;
             padding: 0 5px;
-
             overflow: hidden;
             &__nom {
                 font-family: $font-logo-title;
@@ -40,14 +62,12 @@
                 font-family: "Roboto";
                 font-weight: 900;
                 font-size: 20px;
-
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }   
             &__accompagnement {
-                margin: 5px;
-                
+                margin: 5px;                
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;                
@@ -56,22 +76,23 @@
         .desserts__choix__prix {
             display: flex;
             justify-content: center;
-            align-items: end;            
-            margin: 5px 20px;
+            align-items: flex-end;
+            margin: 0 20px 10px 0;          
             font-weight: 900;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+            right: -70px;
+            transform: all, scale(1, 1);
+            animation: come-out 900ms ease-in-out 500ms 1 alternate both;
         }
 
         .desserts__choix__valide-ok {
+            animation: come-out 900ms ease-in-out 500ms 1 alternate both;
+            // mixin.scss ligne 321            
             @include case-validation-composition;
         }
 
-        &:hover > .desserts__choix__prix {
-            animation-name: price-in;
-            animation-duration: 2000ms;
-            animation-fill-mode: both;
-            animation-delay: 500ms;
-            animation-timing-function: ease-in-out;
-            animation-direction:alternate;
-        }
+
     }
 }

@@ -582,6 +582,11 @@ body {
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
+  transition: 1s;
+}
+.menu__plats__choix__ > .plats__choix__prix {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
 }
 .menu__plats__choix:hover {
   cursor: grab;
@@ -592,11 +597,6 @@ body {
   right: -20px;
 }
 .menu__plats__choix:hover > .plats__choix__valide-ok {
-  display: flex;
-  animation-name: come-in;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
   animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
 }
 .menu__plats__choix .plats__choix__description {
@@ -678,21 +678,29 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  flex-grow: 4;
   border-radius: 20px;
   padding: 5px;
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
+  transition: 1s;
+}
+.menu__desserts__choix__ > .desserts__choix__prix {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
 }
 .menu__desserts__choix:hover {
   cursor: grab;
 }
+.menu__desserts__choix:hover > .desserts__choix__prix {
+  animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
+  position: relative;
+  right: -20px;
+}
 .menu__desserts__choix:hover > .desserts__choix__valide-ok {
   display: flex;
-  animation-name: come-in;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
 }
 .menu__desserts__choix .desserts__choix__description {
   display: flex;
@@ -720,11 +728,18 @@ body {
 .menu__desserts__choix .desserts__choix__prix {
   display: flex;
   justify-content: center;
-  align-items: end;
-  margin: 5px 20px;
+  align-items: flex-end;
+  margin: 0 20px 10px 0;
   font-weight: 900;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  right: -70px;
+  transform: all, scale(1, 1);
+  animation: come-out 900ms ease-in-out 500ms 1 alternate both;
 }
 .menu__desserts__choix .desserts__choix__valide-ok {
+  animation: come-out 900ms ease-in-out 500ms 1 alternate both;
   background-color: #99E2D0;
   color: white;
   display: flex;
@@ -755,14 +770,6 @@ body {
   transform: rotateZ(0deg);
   animation: ok-no-180deg 4s ease-in-out 0 alternate both;
   transition: transform 0.5s ease-in-out;
-}
-.menu__desserts__choix:hover > .desserts__choix__prix {
-  animation-name: price-in;
-  animation-duration: 2000ms;
-  animation-fill-mode: both;
-  animation-delay: 500ms;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
 }
 
 .common-bouton {
