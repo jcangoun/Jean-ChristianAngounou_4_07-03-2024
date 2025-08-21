@@ -408,3 +408,36 @@
         }
 
 
+        //////////// ICi les keyframes de page de telechargement
+        /// 
+        // @mixin page-climb {
+        //             @keyframes page-climb {
+        //     0% {
+        //         opacity: 0;
+        //         z-index: 1;
+        //         position: absolute;
+        //         transform: translateY(50px);
+        //     }
+        //     10% {
+        //         opacity: 1;
+        //     }
+        //     40% {
+        //         opacity: 1;
+        //         transform: translateY(0px);
+        //     }
+        //     75% {
+        //         opacity: 1;
+        //     }
+        //     90% {
+        //         opacity: 0;
+        //         z-index: 1;
+        //         transform: translateY(0px);
+        //     }
+        //     100% {
+        //         opacity: 0;
+        //         z-index: 1;
+        //         transform: translateY(100px);
+        //     }
+        // }
+        // }
+
