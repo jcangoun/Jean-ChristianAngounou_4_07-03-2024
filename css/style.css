@@ -480,7 +480,6 @@ body {
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
-  cursor: grab;
   transition: 1s;
 }
 .menu__entrees__choix__ > .entrees__choix__prix {
@@ -587,20 +586,18 @@ body {
 .menu__plats__choix:hover {
   cursor: grab;
 }
+.menu__plats__choix:hover > .plats__choix__prix {
+  animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
+  position: relative;
+  right: -20px;
+}
 .menu__plats__choix:hover > .plats__choix__valide-ok {
   display: flex;
   animation-name: come-in;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-}
-.menu__plats__choix:hover > .plats__choix__prix {
-  animation-name: price-in;
-  animation-duration: 2000ms;
-  animation-fill-mode: both;
-  animation-delay: 500ms;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
+  animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
 }
 .menu__plats__choix .plats__choix__description {
   display: flex;
@@ -628,11 +625,18 @@ body {
 .menu__plats__choix .plats__choix__prix {
   display: flex;
   justify-content: center;
-  align-items: end;
-  margin: 5px 20px;
+  align-items: flex-end;
+  margin: 0 20px 10px 0;
   font-weight: 900;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  right: -70px;
+  transform: all, scale(1, 1);
+  animation: come-out 900ms ease-in-out 500ms 1 alternate both;
 }
 .menu__plats__choix .plats__choix__valide-ok {
+  animation: come-out 900ms ease-in-out 500ms 1 alternate both;
   background-color: #99E2D0;
   color: white;
   display: flex;

@@ -15,11 +15,21 @@
         padding: 5px;
         margin:10px;  
         box-shadow: 0px 2px 5px 5px $background-color-nav;     
-        
-        // position: relative;
         overflow: hidden;
         &:hover {
             cursor: grab;
+        }
+
+        &:hover > .plats__choix__prix {
+            // animation-name: price-in;
+            // animation-duration: 2000ms;
+            // animation-fill-mode: both;
+            // animation-delay: 500ms;
+            // animation-timing-function: ease-in-out;
+            // animation-direction:alternate;
+            animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
+            position: relative;
+            right: -20px;            
         }
         &:hover > .plats__choix__valide-ok {
             display: flex;
@@ -27,38 +37,28 @@
             animation-duration: 2000ms;
             animation-fill-mode: forwards;
             animation-timing-function: ease-in-out;
-            
+            // animation-direction:alternate;
+            animation: come-in 1500ms ease-in-out 500ms 1 alternate both;
+         // animation: name duration timing-function delay iteration-count direction fill-mode;            
         }
-        &:hover > .plats__choix__prix {
-            animation-name: price-in;
-            animation-duration: 2000ms;
-            animation-fill-mode: both;
-            animation-delay: 500ms;
-            animation-timing-function: ease-in-out;
-            animation-direction:alternate;
-        }
-
         .plats__choix__description {
             display: flex;
             flex-direction: column;
             flex: 70%;
             padding: 0 5px;
-
             overflow: hidden;
             &__nom {
                 font-family: $font-logo-title;
                 margin: 5px;
                 font-family: "Roboto";
                 font-weight: 900;
-                font-size: 20px;
-                
+                font-size: 20px;                
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }   
             &__accompagnement {
                 margin: 5px;
-
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;                
@@ -67,18 +67,20 @@
         .plats__choix__prix {
             display: flex;
             justify-content: center;
-
-            align-items: end;
-
-            margin: 5px 20px;
-            // padding: 0px 10px 5px 0;
-
-            // position: relative;
-            // top: 15px;
+            align-items: flex-end;
+            margin: 0 20px 10px 0;          
             font-weight: 900;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+            right: -70px;
+            transform: all, scale(1, 1);
+            animation: come-out 900ms ease-in-out 500ms 1 alternate both;
+            
         }
-        .plats__choix__valide-ok {
-            // @extend %case-validation-composition;
+        .plats__choix__valide-ok {            
+            animation: come-out 900ms ease-in-out 500ms 1 alternate both;
+            // mixin.scss ligne 321
             @include case-validation-composition;
         }
     }
