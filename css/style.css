@@ -96,12 +96,45 @@
 }
 
 footer .footer-layout__whataboutus .footer-layout__whataboutus__contact, footer .footer-layout__whataboutus .footer-layout__whataboutus__mentions-legales, footer .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__thema, footer .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__handshake, footer .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__thema, footer .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__ustensils, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__contact, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__mentions-legales, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__thema, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__handshake, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__thema, .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__ustensils {
-  margin: 10px 5px;
+  margin: 5px 0 5px 15px;
 }
 
 p {
   font-family: "Roboto";
   margin-left: 10px;
+}
+
+.loading-page {
+  display: none;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 200%;
+  height: 100%;
+  min-width: 375px;
+  z-index: 1;
+  position: absolute;
+  transform: translateY(0px);
+}
+.loading-page__spinner {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  opacity: 0.75;
+  flex: 80%;
+  width: 80%;
+  height: 500px;
+  margin: 10px;
+  box-shadow: 3px 1px 20px 0px grey;
+}
+.loading-page__spinner__font {
+  font-weight: 500;
+  background-color: transparent;
+  z-index: 1;
+  text-shadow: 0 -10px 8px black;
+  transform: rotateZ(0deg);
+  animation: rotation-loading 1s infinite linear;
 }
 
 header {
@@ -836,10 +869,26 @@ body {
   display: flex;
   align-items: center;
 }
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__restaurants .footer-layout__whataboutus__restaurants__ustensils {
+  background-color: violet;
+}
 .footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat {
   display: flex;
   align-items: center;
   margin: 5px 5px 5px 0px;
+  color: red;
+}
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__handshake {
+  color: pink;
+}
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__partenariat__thema {
+  color: peru;
+}
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__mentions-legales {
+  color: mediumorchid;
+}
+.footer-layout .footer-layout__whataboutus .footer-layout__whataboutus__contact {
+  color: mediumorchid;
 }
 .footer-layout .footer-logo, .footer-layout .footer-restaurants, .footer-layout .footer-partenariat, .footer-layout .mentions-legales, .footer-layout .contact {
   display: flex;
@@ -1004,6 +1053,9 @@ footer .footer-layout__whataboutus .footer-layout__whataboutus__partenariat {
   display: flex;
   align-items: center;
   margin: 5px 5px 5px 0px;
+}
+footer .footer-layout__whataboutus .footer-layout__whataboutus__contact {
+  color: white;
 }
 footer .footer-logo, footer .footer-restaurants, footer .footer-partenariat, footer .mentions-legales, footer .contact {
   display: flex;

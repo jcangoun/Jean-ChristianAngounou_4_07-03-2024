@@ -32,6 +32,7 @@
             align-items: center;
             .footer-layout__whataboutus__restaurants__ustensils {
                 @extend %footer-margin;
+                background-color: violet
             } 
             .footer-layout__whataboutus__restaurants__thema {
                 @extend %footer-margin;
@@ -42,19 +43,23 @@
             display: flex;
             align-items: center;
             margin: 5px 5px 5px 0px;
-            // color: red;
+            color: red;
             &__handshake {
                 @extend %footer-margin;
+                color:pink
             }
             &__thema {
                 @extend %footer-margin;
+                color:peru
             }
         }
         .footer-layout__whataboutus__mentions-legales {
             @extend %footer-margin;
+            color:mediumorchid
         }
         .footer-layout__whataboutus__contact {
             @extend %footer-margin;        
+            color:mediumorchid
         }
 
     }
