@@ -1,3 +1,4 @@
+
 .footer-layout {
     color: white;
     padding: 10px 20px;
@@ -27,47 +28,45 @@
             flex-direction: row;
             margin: 20px 40px 0px 0;
         }
-        .footer-layout__whataboutus__restaurants {
+        &__restaurants {
             display: flex;
             align-items: center;
-            .footer-layout__whataboutus__restaurants__ustensils {
+            font-weight: 900;
+            &__ustensils {
                 @extend %footer-margin;
-                background-color: violet
             } 
-            .footer-layout__whataboutus__restaurants__thema {
+            &__thema {
                 @extend %footer-margin;
             }   
         }
         
-        .footer-layout__whataboutus__partenariat {
+        &__partenariat {
             display: flex;
             align-items: center;
             margin: 5px 5px 5px 0px;
-            color: red;
+            // color: red;
             &__handshake {
                 @extend %footer-margin;
-                color:pink
             }
             &__thema {
                 @extend %footer-margin;
-                color:peru
             }
         }
-        .footer-layout__whataboutus__mentions-legales {
+        &__mentions-legales {
             @extend %footer-margin;
-            color:mediumorchid
+            color: red
         }
-        .footer-layout__whataboutus__contact {
+        &__contact {
             @extend %footer-margin;        
-            color:mediumorchid
         }
 
     }
-        
+    .footer-layout__whataboutus li {
+        // color: red;
+    }
         // ici je vais faire un placeholder qui fera ca ici
     .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
         display: flex;
         align-items: center;
     }    
-
 }

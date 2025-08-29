@@ -10,52 +10,80 @@ footer {
         // padding: 20px 0;
         // width: 100%;
     }
-    .footer-logo {
+.footer { 
+        
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 10px;
+    padding: 0;
+        @media (min-width: 768px) and (max-width: 2550px) {
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    .footer .footer-logo {
         font-family: $font-logo-title;
         font-size: 1rem;
-
+        margin: 10px;
         @media (min-width: 768px) and (max-width: 2550px) {
-            margin: 20px 20px 0px 20px;
+            order:-1 ;
+            margin: 20px;
+            padding: 5px 15px 5px 30px;
         }
     }
 
+}
     .footer-layout__whataboutus {
-        display: flex;
-        flex-direction: column;    
         margin: 20px 10px 0px 0;
         @media (min-width: 768px) and (max-width: 2550px) {
-            flex-direction: row;
+
             margin: 20px 40px 0px 0;
         }
-        .footer-layout__whataboutus__restaurants {
+        &__restaurants {
             display: flex;
             align-items: center;
-            .footer-layout__whataboutus__restaurants__ustensils {
+            margin: 5px 5px 5px 0px;;
+            &__ustensils {
+                margin: 10px;
                 @extend %footer-margin;
             } 
-            .footer-layout__whataboutus__restaurants__thema {
+            &__thema {
                 @extend %footer-margin;
             }   
-        }
-        
-        .footer-layout__whataboutus__partenariat {
+        }        
+        &__partenariat {
             display: flex;
             align-items: center;
             margin: 5px 5px 5px 0px;
             // color: red;
             &__handshake {
+                margin: 10px;
                 @extend %footer-margin;
             }
             &__thema {
                 @extend %footer-margin;
             }
         }
-        .footer-layout__whataboutus__mentions-legales {
+        &__mentions-legales {
             @extend %footer-margin;
         }
-        .footer-layout__whataboutus__contact {
+        &__contact {
             color: white;
-            @extend %footer-margin;        
+            @extend %footer-margin;
+            margin: 20px 0;   
+                    @media (min-width: 768px) and (max-width: 2550px) {
+                        order: -1;
+                        margin: 20px 60px 20px 0px;
+                        padding: 5px 15px 5px 30px;
+                    }  
+                    .footer_mailingContact {
+                        color: white;
+                        font-size: 1rem;
+                    }
+
         }
 
     }
