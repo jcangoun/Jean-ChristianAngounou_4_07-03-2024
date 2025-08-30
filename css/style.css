@@ -828,53 +828,72 @@ body {
   background-color: #ff93e1;
 }
 
-.footer-layout {
+.footer {
   color: white;
   padding: 10px 20px;
   background-color: #393939;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
-  .footer-layout {
+  .footer {
     display: flex;
     flex-direction: row-reverse;
     padding: 10px;
     align-items: center;
   }
 }
-.footer-layout__logo {
+.footer .footer .footer-logo {
   font-family: "Shrikhand";
   font-size: 1rem;
+  margin: 10px;
+  color: red;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
-  .footer-layout__logo {
+  .footer .footer .footer-logo {
     margin: 20px 20px 0px 20px;
+    order: -2;
+    margin: 20px;
   }
 }
-.footer-layout .footer-layout__whataboutus {
-  display: flex;
-  flex-direction: column;
+.footer .footer-layout__whataboutus {
   margin: 20px 10px 0px 0;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
-  .footer-layout .footer-layout__whataboutus {
-    flex-direction: row;
+  .footer .footer-layout__whataboutus {
     margin: 20px 40px 0px 0;
   }
 }
-.footer-layout .footer-layout__whataboutus__restaurants {
-  display: flex;
-  align-items: center;
-  font-weight: 900;
-}
-.footer-layout .footer-layout__whataboutus__partenariat {
+.footer .footer-layout__whataboutus__restaurants {
   display: flex;
   align-items: center;
   margin: 5px 5px 5px 0px;
 }
-.footer-layout .footer-layout__whataboutus__mentions-legales {
-  color: red;
+.footer .footer-layout__whataboutus__restaurants__ustensils {
+  margin: 10px;
 }
-.footer-layout .footer-logo, .footer-layout .footer-restaurants, .footer-layout .footer-partenariat, .footer-layout .mentions-legales, .footer-layout .contact {
+.footer .footer-layout__whataboutus__partenariat {
+  display: flex;
+  align-items: center;
+  margin: 5px 5px 5px 0px;
+}
+.footer .footer-layout__whataboutus__partenariat__handshake {
+  margin: 10px;
+}
+.footer .footer-layout__whataboutus__contact {
+  color: white;
+  margin: 20px 0;
+}
+@media (min-width: 768px) and (max-width: 2550px) {
+  .footer .footer-layout__whataboutus__contact {
+    order: -1;
+    margin: 20px 5px 20px 20px;
+    padding: 5px 15px 5px 30px;
+  }
+}
+.footer .footer-layout__whataboutus__contact .footer_mailingContact {
+  color: white;
+  font-size: 1rem;
+}
+.footer .footer-logo, .footer .footer-restaurants, .footer .footer-partenariat, .footer .mentions-legales, .footer .contact {
   display: flex;
   align-items: center;
 }
@@ -1015,14 +1034,14 @@ footer .footer {
   list-style-type: none;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 10px;
-  padding: 0;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
   footer .footer {
+    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
 }
 footer .footer .footer .footer-logo {
@@ -1068,7 +1087,7 @@ footer .footer-layout__whataboutus__contact {
 @media (min-width: 768px) and (max-width: 2550px) {
   footer .footer-layout__whataboutus__contact {
     order: -1;
-    margin: 20px 60px 20px 0px;
+    margin: 20px 5px 20px 20px;
     padding: 5px 15px 5px 30px;
   }
 }
