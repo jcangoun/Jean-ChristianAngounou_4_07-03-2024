@@ -1,5 +1,5 @@
 
-.footer-layout {
+.footer {
     color: white;
     padding: 10px 20px;
     background-color: $footer-background-color;
@@ -9,43 +9,46 @@
         padding: 10px;
         align-items: center;
         // width: 100%;
-    }
-    &__logo {
+    }  
+    .footer .footer-logo {
         font-family: $font-logo-title;
         font-size: 1rem;
-        
+        margin: 10px;        
+        color: red;
         // margin: 15px 20px;
         @media (min-width: 768px) and (max-width: 2550px) {
-                    margin: 20px 20px 0px 20px;
+            margin: 20px 20px 0px 20px;
+            order:-2 ;
+            margin: 20px;
         }
     }
-
+  
+/////////    }//////////////////////////////////////////
     .footer-layout__whataboutus {
-        display: flex;
-        flex-direction: column;    
         margin: 20px 10px 0px 0;
         @media (min-width: 768px) and (max-width: 2550px) {
-            flex-direction: row;
+
             margin: 20px 40px 0px 0;
         }
         &__restaurants {
             display: flex;
             align-items: center;
-            font-weight: 900;
+            margin: 5px 5px 5px 0px;
             &__ustensils {
+                margin: 10px;
                 @extend %footer-margin;
             } 
             &__thema {
                 @extend %footer-margin;
             }   
-        }
-        
+        }        
         &__partenariat {
             display: flex;
             align-items: center;
             margin: 5px 5px 5px 0px;
             // color: red;
             &__handshake {
+                margin: 10px;
                 @extend %footer-margin;
             }
             &__thema {
@@ -54,19 +57,29 @@
         }
         &__mentions-legales {
             @extend %footer-margin;
-            color: red
         }
         &__contact {
-            @extend %footer-margin;        
+            color: white;
+            @extend %footer-margin;
+            margin: 20px 0;   
+                    @media (min-width: 768px) and (max-width: 2550px) {
+                        order: -1;
+                        margin: 20px 5px 20px 20px;
+                        padding: 5px 15px 5px 30px;
+                    }  
+                    .footer_mailingContact {
+                        color: white;
+                        font-size: 1rem;
+                    }
+
         }
 
     }
-    .footer-layout__whataboutus li {
-        // color: red;
-    }
-        // ici je vais faire un placeholder qui fera ca ici
+// ici je vais faire un placeholder qui fera ca ici
     .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
         display: flex;
         align-items: center;
     }    
+
+
 }

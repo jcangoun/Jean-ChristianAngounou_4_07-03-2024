@@ -17,12 +17,14 @@ footer {
     list-style-type: none;
     justify-content: center;
     align-items: flex-start;
-    margin: 20px 10px;
-    padding: 0;
+    // margin: 20px 10px;
+
         @media (min-width: 768px) and (max-width: 2550px) {
+            display: flex;
             flex-direction: row-reverse;
             justify-content: center;
             align-items: center;
+            margin: 0;
         }
     .footer .footer-logo {
         font-family: $font-logo-title;
@@ -36,6 +38,7 @@ footer {
     }
 
 }
+//////////////////////////////////////////////////////
     .footer-layout__whataboutus {
         margin: 20px 10px 0px 0;
         @media (min-width: 768px) and (max-width: 2550px) {
@@ -45,7 +48,7 @@ footer {
         &__restaurants {
             display: flex;
             align-items: center;
-            margin: 5px 5px 5px 0px;;
+            margin: 5px 5px 5px 0px;
             &__ustensils {
                 margin: 10px;
                 @extend %footer-margin;
@@ -76,7 +79,7 @@ footer {
             margin: 20px 0;   
                     @media (min-width: 768px) and (max-width: 2550px) {
                         order: -1;
-                        margin: 20px 60px 20px 0px;
+                        margin: 20px 5px 20px 20px;
                         padding: 5px 15px 5px 30px;
                     }  
                     .footer_mailingContact {
