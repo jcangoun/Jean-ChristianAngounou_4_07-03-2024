@@ -6,6 +6,7 @@
     &:hover {
         background-color: lighten($secondary-color, 5%);
         box-shadow: 0 10px 10px -1px darken(grey, 15%);
+    // Le boxshadow darken sera mise au :clic plus tard
     }
 }
 
@@ -21,7 +22,6 @@
     .tests-titre {
         display: flex;
     }
-
 
     .restaurants__groupe__article {
         display: flex;
@@ -269,13 +269,11 @@
     }
 }
 
-
 // bientot a effacer ci dessous
 @mixin price-moves {
     position: relative;
     right: -10px;
-    transform: scale(1, 1);
-    
+    transform: scale(1, 1);    
 }
 
 @keyframes price-moving {
@@ -292,7 +290,6 @@
 @mixin case-validation-composition {
     background-color: $thirth-color;
     color: white;
-    // test ci dessous
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,7 +297,6 @@
     padding: 10px;
     margin: -5px;
     border-radius: 0 20px 20px 0px;
-
     position: relative;
     right: -71px;
     transform: scale(1, 1.02) ;
@@ -308,9 +304,6 @@
     &:hover {
         transition: all 1s cubic-bezier(0.70, 0.30, 0.50, 1.35);
         transform: translateX(0px);
-
-        // animation-name: come-in;
-        // animation-duration: 1500ms;
     }
 
     &:hover > .ok-font {
@@ -322,7 +315,6 @@
         animation-iteration-count:1;
         animation-direction: alternate;
        animation-fill-mode: both;
-    //    background-color: yellowgreen;
     }
     .ok-font {
         transform: rotateZ(0deg);
@@ -408,37 +400,57 @@
             }
         }
 
-
         //////////// ICi les keyframes de page de telechargement
         /// 
-        // @mixin page-climb {
-        //             @keyframes page-climb {
-        //     0% {
-        //         opacity: 0;
-        //         z-index: 1;
-        //         position: absolute;
-        //         transform: translateY(50px);
-        //     }
-        //     10% {
-        //         opacity: 1;
-        //     }
-        //     40% {
-        //         opacity: 1;
-        //         transform: translateY(0px);
-        //     }
-        //     75% {
-        //         opacity: 1;
-        //     }
-        //     90% {
-        //         opacity: 0;
-        //         z-index: 1;
-        //         transform: translateY(0px);
-        //     }
-        //     100% {
-        //         opacity: 0;
-        //         z-index: 1;
-        //         transform: translateY(100px);
-        //     }
-        // }
-        // }
+        @mixin page-climb {
+            @keyframes page-climb {
+                0% {
+                    display: flex;
+                    opacity: 1;
+                    z-index: 1;
+                    position: absolute;
+                    transform: translateY(50px);
+                }
+                // 10% {
+                //     opacity: 1;
+                // }
+                // 40% {
+                //     opacity: 1;
+                //     transform: translateY(0px);
+                // }
+                65% {
+                    opacity: 1;
+                }
+                98% {
+                    opacity: 0;
+                    z-index: 1;
+                    transform: translateY(100px);
+
+                }
+                100% {
+                    display: none;
+                }
+            }
+        }
+
+        @mixin rotation-loading {
+            @keyframes rotation-loading {
+                0% {
+                    opacity: 0;
+                    transform: rotateY(0deg);
+                }
+                10% {
+                    opacity: 1;
+                }
+                60% {
+                    opacity: 0;
+                    transform: rotateY(360deg);
+                }
+                100% {
+                    opacity: 0;
+                    transform: rotateY(0deg);
+                    color: $primary-color;
+                }
+            }
+        }
 
