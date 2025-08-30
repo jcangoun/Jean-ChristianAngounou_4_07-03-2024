@@ -585,7 +585,7 @@ body {
   text-overflow: ellipsis;
   position: relative;
   right: -70px;
-  transform: all, scale(1, 1);
+  transform: scale(1, 1);
   animation: come-out 900ms ease-in-out 500ms 1 alternate both;
 }
 .menu__entrees__choix .entrees__choix__valide-ok {
@@ -686,7 +686,7 @@ body {
   text-overflow: ellipsis;
   position: relative;
   right: -70px;
-  transform: all, scale(1, 1);
+  transform: scale(1, 1);
   animation: come-out 900ms ease-in-out 500ms 1 alternate both;
 }
 .menu__plats__choix .plats__choix__valide-ok {
@@ -789,7 +789,7 @@ body {
   text-overflow: ellipsis;
   position: relative;
   right: -70px;
-  transform: all, scale(1, 1);
+  transform: scale(1, 1);
   animation: come-out 900ms ease-in-out 500ms 1 alternate both;
 }
 .menu__desserts__choix .desserts__choix__valide-ok {
@@ -863,20 +863,18 @@ body {
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    padding: 10px;
+    padding: 0px;
     align-items: center;
   }
+  .footer .footer-logo {
+    font-family: "Shrikhand";
+    font-size: 1rem;
+    margin: 10px;
+  }
 }
-.footer .footer .footer-logo {
-  font-family: "Shrikhand";
-  font-size: 1rem;
-  margin: 10px;
-  color: red;
-}
-@media (min-width: 768px) and (max-width: 2550px) {
-  .footer .footer .footer-logo {
+@media (min-width: 768px) and (max-width: 2550px) and (min-width: 768px) and (max-width: 2550px) {
+  .footer .footer-logo {
     margin: 20px 20px 0px 20px;
-    order: -2;
     margin: 20px;
   }
 }
@@ -886,6 +884,10 @@ body {
 @media (min-width: 768px) and (max-width: 2550px) {
   .footer .footer-layout__whataboutus {
     margin: 20px 40px 0px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 }
 .footer .footer-layout__whataboutus__restaurants {
@@ -904,15 +906,19 @@ body {
 .footer .footer-layout__whataboutus__partenariat__handshake {
   margin: 10px;
 }
+.footer .footer-layout__whataboutus__mentions-legales {
+  margin: 10px;
+}
 .footer .footer-layout__whataboutus__contact {
   color: white;
-  margin: 20px 0;
+  margin: 30px;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
   .footer .footer-layout__whataboutus__contact {
-    order: -1;
+    order: 0;
     margin: 20px 5px 20px 20px;
     padding: 5px 15px 5px 30px;
+    list-style-type: none;
   }
 }
 .footer .footer-layout__whataboutus__contact .footer_mailingContact {

@@ -6,29 +6,33 @@
     @media (min-width: 768px) and (max-width: 2550px) {
         display: flex;
         flex-direction: row-reverse;
-        padding: 10px;
+        padding: 0px;
         align-items: center;
         // width: 100%;
-    }  
-    .footer .footer-logo {
+  
+     .footer-logo {
         font-family: $font-logo-title;
         font-size: 1rem;
         margin: 10px;        
-        color: red;
+        // color: red;
         // margin: 15px 20px;
         @media (min-width: 768px) and (max-width: 2550px) {
             margin: 20px 20px 0px 20px;
-            order:-2 ;
+            // order:-2 ;
             margin: 20px;
         }
     }
-  
+     } 
 /////////    }//////////////////////////////////////////
     .footer-layout__whataboutus {
         margin: 20px 10px 0px 0;
         @media (min-width: 768px) and (max-width: 2550px) {
 
             margin: 20px 40px 0px 0;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
         }
         &__restaurants {
             display: flex;
@@ -57,15 +61,17 @@
         }
         &__mentions-legales {
             @extend %footer-margin;
+            margin: 10px;
         }
         &__contact {
             color: white;
             @extend %footer-margin;
-            margin: 20px 0;   
+            margin: 30px;   
                     @media (min-width: 768px) and (max-width: 2550px) {
-                        order: -1;
+                        order: 0;
                         margin: 20px 5px 20px 20px;
                         padding: 5px 15px 5px 30px;
+                        list-style-type: none;
                     }  
                     .footer_mailingContact {
                         color: white;
