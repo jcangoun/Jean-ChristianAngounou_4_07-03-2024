@@ -5,6 +5,7 @@
     background-color: $secondary-color;
     &:hover {
         background-color: lighten($secondary-color, 5%);
+        box-shadow: 0 10px 10px -1px darken(grey, 15%);
     }
 }
 

@@ -826,6 +826,7 @@ body {
 }
 .common-bouton .bouton--color:hover {
   background-color: #ff93e1;
+  box-shadow: 0 10px 10px -1px #5a5a5a;
 }
 
 .footer {
