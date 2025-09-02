@@ -268,6 +268,37 @@
     }
 }
 
+
+//////////////////////////// mix tous les choix d un menu /////////////////
+
+    ////////////////////////// ENTRée  /////////////////////////////
+
+
+@mixin greeting-comming {
+    @keyframes greeting-comming {
+        0% {
+            transform: translateY(40%);
+            opacity: 0;
+        
+        }
+        50% {
+                        transform: translateY(20%);
+            opacity: 0.6;
+        }
+        90% {
+            transform: translateY(-15%);
+        }
+        100% {
+            transform: translatY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+
+////////////////////////////////////////////////////////
+
 // bientot a effacer ci dessous
 @mixin price-moves {
     position: relative;

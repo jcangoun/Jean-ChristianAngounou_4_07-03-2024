@@ -1,4 +1,6 @@
 .menu__desserts {
+    animation: greeting-comming 2800ms ease-in-out 0.5s both;
+    @include greeting-comming;
     padding: 0 10px;
 
     display: flex;

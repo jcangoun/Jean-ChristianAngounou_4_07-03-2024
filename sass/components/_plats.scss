@@ -1,6 +1,7 @@
 .menu__plats {
+        animation: greeting-comming 1000ms ease-in-out 1s both;
+    @include greeting-comming;
     padding: 0 10px;
-
     display: flex;
     flex-direction: column;
 

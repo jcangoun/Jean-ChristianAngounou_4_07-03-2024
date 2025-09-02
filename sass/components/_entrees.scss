@@ -1,4 +1,6 @@
 .menu__entrees {
+    animation: greeting-comming 750ms ease-in-out 0.5s both;
+    @include greeting-comming;
     display: flex;
     flex-direction: column;
     padding: 0 10px;    
