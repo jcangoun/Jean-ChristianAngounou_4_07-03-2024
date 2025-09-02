@@ -112,7 +112,6 @@ p {
   position: absolute;
   z-index: 1;
   transform: translateY(0px);
-  animation: page-climb 3800ms cubic-bezier(0.39, 0.578, 0.565, 1);
 }
 @keyframes page-climb {
   0% {
@@ -511,12 +510,14 @@ body {
   background: linear-gradient(180deg, rgb(162, 91, 220) 5%, rgb(229, 113, 219) 95%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .restaurants-article-description-like:hover > .empty {
   display: none;
 }
 .restaurants-article-description-like:hover > .full {
   display: flex;
+  transform: scale(1.1);
 }
 
 .menu__entrees {
@@ -908,17 +909,18 @@ body {
 }
 .footer .footer-layout__whataboutus__mentions-legales {
   margin: 10px;
+  list-style-type: none;
 }
 .footer .footer-layout__whataboutus__contact {
   color: white;
   margin: 30px;
+  list-style-type: none;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
   .footer .footer-layout__whataboutus__contact {
     order: 0;
     margin: 20px 5px 20px 20px;
     padding: 5px 15px 5px 30px;
-    list-style-type: none;
   }
 }
 .footer .footer-layout__whataboutus__contact .footer_mailingContact {
@@ -1112,9 +1114,13 @@ footer .footer-layout__whataboutus__partenariat {
 footer .footer-layout__whataboutus__partenariat__handshake {
   margin: 10px;
 }
+footer .footer-layout__whataboutus__mentions-legales {
+  list-style-type: none;
+}
 footer .footer-layout__whataboutus__contact {
   color: white;
   margin: 20px 0;
+  list-style-type: none;
 }
 @media (min-width: 768px) and (max-width: 2550px) {
   footer .footer-layout__whataboutus__contact {

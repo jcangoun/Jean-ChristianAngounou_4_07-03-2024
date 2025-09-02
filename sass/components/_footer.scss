@@ -62,16 +62,17 @@
         &__mentions-legales {
             @extend %footer-margin;
             margin: 10px;
+            list-style-type: none;
         }
         &__contact {
             color: white;
             @extend %footer-margin;
             margin: 30px;   
+            list-style-type: none;
                     @media (min-width: 768px) and (max-width: 2550px) {
                         order: 0;
                         margin: 20px 5px 20px 20px;
                         padding: 5px 15px 5px 30px;
-                        list-style-type: none;
                     }  
                     .footer_mailingContact {
                         color: white;

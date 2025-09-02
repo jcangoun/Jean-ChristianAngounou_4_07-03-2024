@@ -1,22 +1,21 @@
-.icone-color {
-    
-    
+.icone-color {    
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
     position: relative;
     right: 11px;
     bottom: 1px;
     margin: 0px 0px 0 0;
-                        @media screen and (min-width:320px) and (max-width:768px) {
-                        right: 15px;
-                        }
+    @media screen and (min-width:320px) and (max-width:768px) {
+    right: 15px;
+    }
 }
 .inactive-icone {
-color: $base-box-shadow-nav;
+    color: $base-box-shadow-nav;
 }
 .icone-icolored {
-    color: $primary-color;
+    color: $primary-color;    
+}
+.icone-fulling {
     
 }
 .heart {
@@ -26,7 +25,6 @@ color: $base-box-shadow-nav;
     position: relative;
     right: 10px;
     font-size: 25px;
-
 }
 .restaurants-article-description-like {
     display: flex;
@@ -36,7 +34,6 @@ color: $base-box-shadow-nav;
     position: relative;
     right: 10px;
     font-size: 25px;
-
     .empty {
         display: flex;
     }
@@ -46,13 +43,14 @@ color: $base-box-shadow-nav;
         background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);        
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        //-webkit-background-clip: text;
-        
+        -webkit-background-clip: text;        
     }
     &:hover > .empty {
         display: none;
     }
     &:hover > .full {
         display: flex;
+        transform: scale(1.10) ;
     }
+
 }

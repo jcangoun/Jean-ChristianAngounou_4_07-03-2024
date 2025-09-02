@@ -9,12 +9,10 @@
     height: 200%;
     ////////////////////////
     // opacity: 0.75;
-    ///////////////////////    height: 100%;
     position: absolute;
     z-index: 1;
     transform: translateY(0px);
-
-    animation: page-climb 3800ms cubic-bezier(.39, .578,.565, 1.000);
+    // animation: page-climb 3000ms cubic-bezier(.39, .578,.565, 1.000);
     @include page-climb;
     &__spinner {
         display: flex;
@@ -27,10 +25,9 @@
         height: 200%;
         margin: 10px;
         box-shadow: 3px 1px 20px 0px grey;
-
         position: absolute;
         bottom: 1000px;
-            @media screen and (max-width: 765px) {
+        @media screen and (max-width: 765px) {
 
             }
         &__font {
@@ -42,7 +39,5 @@
             transform: rotateZ(0deg);
             animation: rotation-loading 2s infinite linear;
         }
-
     }
-
 }

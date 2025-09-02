@@ -214,8 +214,7 @@
     .restaurants {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        // margin: 10px;        
+        justify-content: center;     
         background-color: $background-color-box;
         width: 100%;
         @media screen and (min-width:768px) and (max-width:2550px) {
@@ -453,4 +452,3 @@
                 }
             }
         }
-
