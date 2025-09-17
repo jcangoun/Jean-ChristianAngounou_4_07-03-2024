@@ -46,6 +46,10 @@
             justify-content: center;
             width:  10%;
             font-size: 25px;
+            position: relative;
+            cursor: pointer;
+            margin: 25px;
+            transform: scaleY(1.14);
             .empty {
                 &:active {
                     display: none;
