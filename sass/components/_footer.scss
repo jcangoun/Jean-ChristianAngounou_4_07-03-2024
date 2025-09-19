@@ -26,6 +26,7 @@
 /////////    }//////////////////////////////////////////
     .footer-layout__whataboutus {
         margin: 20px 10px 0px 0;
+        padding: 0;
         @media (min-width: 768px) and (max-width: 2550px) {
 
             margin: 20px 40px 0px 0;
@@ -84,6 +85,8 @@
     .footer-logo, .footer-restaurants, .footer-partenariat, .mentions-legales, .contact {
         display: flex;
         align-items: center;
+        position: relative;
+        right: -10px;
     }    
 
 

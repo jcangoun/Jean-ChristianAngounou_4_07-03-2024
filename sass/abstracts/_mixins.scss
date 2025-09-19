@@ -9,7 +9,6 @@
     // Le boxshadow darken sera mise au :clic plus tard
     }
 }
-
 @mixin les-titres {
     font-family: $font-text;
     font-weight: 100;
@@ -17,16 +16,13 @@
 .titre {
     @include les-titres;
 }
-
 @mixin test {
     .tests-titre {
         display: flex;
     }
-
     .restaurants__groupe__article {
         display: flex;
-        flex-direction: column;
-   
+        flex-direction: column;   
         @media screen and (min-width:768px) and (max-width:2550px) {
             flex-direction: row;
             flex-wrap: wrap;
@@ -67,7 +63,6 @@
                     font-weight: 500;
                     background-color: $thirth-color;
                     color: $color-text-pop-up;
-
                 }
                 .lien-restaurant__article__description {
                     display: flex;
@@ -94,7 +89,6 @@
     }
 }
 }
-
 @mixin decouverte-restaurants-section {
     .decouvertes-restaurants {
         display: flex;
@@ -306,11 +300,9 @@
     0% {
         transform: translateX(10px);
     }
-
     100% {
         transform: translateX(0px);
         right: 0px;
-
     }
 }
 @mixin case-validation-composition {
@@ -331,7 +323,6 @@
         transition: all 1s cubic-bezier(0.70, 0.30, 0.50, 1.35);
         transform: translateX(0px);
     }
-
     &:hover > .ok-font {
         // transition: ok-180deg 4s ease-in-out 0 alternate both;
         animation: ok-180deg 4s ease-in-out 0 alternate both;
@@ -347,7 +338,6 @@
         animation: ok-no-180deg 4s ease-in-out 0 alternate both;
         transition: transform 0.5s ease-in-out;
     }
-
 }
 
 @keyframes come-in {
