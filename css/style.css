@@ -1034,6 +1034,8 @@ body {
 .footer .footer-layout__whataboutus__contact .footer_mailingContact {
   color: white;
   font-size: 1rem;
+  position: relative;
+  right: 20px;
 }
 .footer .footer-logo, .footer .footer-restaurants, .footer .footer-partenariat, .footer .mentions-legales, .footer .contact {
   display: flex;
