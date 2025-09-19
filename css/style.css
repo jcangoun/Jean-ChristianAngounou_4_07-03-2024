@@ -1147,18 +1147,24 @@ body main {
   margin: 25px;
   transform: scaleY(1.14);
 }
-.menu__intro__like .empty:active {
-  display: none;
-}
-.menu__intro__like .empty:active + .full {
-  display: flex;
+.menu__intro__like .empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-37%, -50%);
+  background: #fff;
+  z-index: 1;
 }
 .menu__intro__like .full {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
   color: #9356DC;
   background: linear-gradient(180deg, rgb(162, 91, 220) 5%, rgb(229, 113, 219) 95%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .menu__intro__like:hover > .empty {
   animation: heartAppear 1s ease-in-out 0s 1 normal forwards;
