@@ -17,16 +17,15 @@
         margin:10px;  
         box-shadow: 0px 2px 5px 5px $background-color-nav;             
         overflow: hidden;    
-        // cursor: grab;    
+        cursor: grab;    
         transition: 1s;
         &__> .entrees__choix__prix { 
               transform: translateX(0);
               transition: transform 0.5s ease-in-out;
         }
-        &:hover {
-            cursor: grab;
-        }
         &:hover > .entrees__choix__prix {
+            position: relative;
+            right: -20px;
             // animation-name: price-in;
             // animation-duration: 2000ms;
             // animation-fill-mode: both;
@@ -34,8 +33,6 @@
             // animation-timing-function: ease-in-out;
             // animation-direction:alternate;            
             animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
-            position: relative;
-            right: -20px;
          // animation: name duration timing-function delay iteration-count direction fill-mode;
         }
         &:hover > .entrees__choix__valide-ok {

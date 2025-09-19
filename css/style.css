@@ -611,19 +611,17 @@ body {
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
+  cursor: grab;
   transition: 1s;
 }
 .menu__entrees__choix__ > .entrees__choix__prix {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
-.menu__entrees__choix:hover {
-  cursor: grab;
-}
 .menu__entrees__choix:hover > .entrees__choix__prix {
-  animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
   position: relative;
   right: -20px;
+  animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
 }
 .menu__entrees__choix:hover > .entrees__choix__valide-ok {
   display: flex;
@@ -731,14 +729,12 @@ body {
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
+  cursor: grab;
   transition: 1s;
 }
 .menu__plats__choix__ > .plats__choix__prix {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
-}
-.menu__plats__choix:hover {
-  cursor: grab;
 }
 .menu__plats__choix:hover > .plats__choix__prix {
   animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
@@ -851,14 +847,12 @@ body {
   margin: 10px;
   box-shadow: 0px 2px 5px 5px #EAEAEA;
   overflow: hidden;
+  cursor: grab;
   transition: 1s;
 }
 .menu__desserts__choix__ > .desserts__choix__prix {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
-}
-.menu__desserts__choix:hover {
-  cursor: grab;
 }
 .menu__desserts__choix:hover > .desserts__choix__prix {
   animation: price-in 1500ms ease-in-out 500ms 1 alternate both;
