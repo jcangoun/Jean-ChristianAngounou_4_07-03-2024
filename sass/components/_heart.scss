@@ -15,9 +15,6 @@
 .icone-icolored {
     color: $primary-color;    
 }
-.icone-fulling {
-    
-}
 .heart {
     justify-content: center;
     align-items: center;
@@ -41,7 +38,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%);
         background: #fff;
         z-index: 1;    
     }
@@ -49,7 +46,7 @@
         position: absolute;
         top: 50%;
         left: 55%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%) scale(1);
         color: $primary-color;
         background: linear-gradient(180deg, rgba(162,91,220,1) 5%, rgba(229,113,219,1) 95%);        
         background-clip: text;
@@ -76,7 +73,6 @@
         z-index: 0;
     }
 }
-
 @keyframes heartDisppear {
     0% {
         opacity: 0;
